@@ -19,7 +19,7 @@ navigation:
  - title: Projects
    url: /index.html
  - title: Profile
-   url: /about.html
+   url: /about
  - title: Blog
    url: /blog
 
@@ -45,7 +45,7 @@ address:
   - line: Richmond, VA 23220
 
 # Credits content
-credits: ' Powered by Jekyll.<br> Hosted by <a href="http://asmallorange.7eer.net/c/169407/185398/3107">A Small Orange</a>.'
+credits: ' Powered by Jekyll.<br> Hosted by Github Pages.'
 
 cdn_path: /public/assets
 
