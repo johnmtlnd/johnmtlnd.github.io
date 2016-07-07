@@ -1,0 +1,56 @@
+# Permalinks
+permalink:           none
+
+# Setup
+title:               John Maitland
+tagline:             Visual Designer
+url:                 http://johnmtlnd.com
+paginate:            5
+baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+navigation:
+ - title: Projects
+   url: /index.html
+ - title: Profile
+   url: /about.html
+ - title: Blog
+   url: /blog
+
+# About/contact
+author:
+  name:              John Maitland
+  url:               https://twitter.com/johnmtlnd
+  email:             john@johnmtlnd.com
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/johnmtlnd
+  - title: instagram
+    url: http://instagram.com/johnmtlnd
+  - title: github
+    url: http://github.com/johnmtlnd
+  - title: linkedin
+    url: http://linkedin.com/in/johnmtlnd
+# Postal address (add as many lines as necessary)
+address:
+  - line: 16 S Brunswick St.
+  - line: Richmond, VA 23220
+
+# Credits content
+credits: ' Powered by Jekyll.<br> Hosted by <a href="http://asmallorange.7eer.net/c/169407/185398/3107">A Small Orange</a>.'
+
+cdn_path: /public/assets
+
+
+# Gems
+gems:
+  - jekyll-paginate
+  - jekyll-gist

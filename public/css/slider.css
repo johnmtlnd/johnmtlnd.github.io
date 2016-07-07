@@ -1,0 +1,106 @@
+#portfolio-grid {
+    margin:0 auto; /*center aligned*/
+    margin-top: 60px;
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+}
+#portfolio-grid li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width: 31%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+/* The wrapper for each item */
+.cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+
+/* If have the image layer */
+.grid-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+    margin: 0;
+}
+
+/* If have the overlay layer */
+.grid-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #FFD900 80%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#portfolio-grid li:hover .grid-overlay {
+    opacity:0.8;
+}
+
+/* If have captions */
+.post-meta {
+    display:block;
+    padding:0 20px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-family: 'Lora', serif;
+    font-size:1.2rem;
+    top:40%;
+    color:#202020;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#portfolio-grid li:hover .post-meta {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 1200px) {
+    #portfolio-grid li {
+        width:31%;
+    }
+}
+
+@media (max-width: 700px) {
+    #portfolio-grid li {
+        width:48%;
+    }
+    .post-header{
+      height:50px;
+    }
+}
+
+@media (max-width: 550px) {
+    #portfolio-grid li {
+        width:100%;
+    }
+    .post-header{
+      height: 40px;
+    }
+
+}
