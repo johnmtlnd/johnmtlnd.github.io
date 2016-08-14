@@ -26,7 +26,7 @@ title: Info
 
   </div>
   <div class="col-2-3">
-    <h3 class="intro-text">Formed at <a href="http://www.arts.vcu.edu">VCUarts</a>. Currently working at <a href="http://www.raisonbrands.com">Raison</a>. Previously at <a href="http://www.riggsward.com">Riggs Ward Design</a>.
+    <h3 class="intro-text">Formed at <a href="http://www.arts.vcu.edu">VCUarts</a>. Currently working at <a href="http://www.riggsward.com">Riggs Ward Design</a> as an exhibit designer.
         <script language="JavaScript">
           var Quotation=new Array()
 
