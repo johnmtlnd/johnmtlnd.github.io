@@ -17,7 +17,7 @@ layout: page
 
         <textarea name="message" placeholder="Holla!"></textarea>
         <input type="text" name="_gotcha" style="display:none" />
-        <input type="hidden" name="_next" value="//www.johnmtlnd.com/thanks" />
+        <input type="hidden" name="_next" value="//www.johnmtlnd.com/thanks.html" />
         <input  class="button" type="submit" value="Send">
     </form>
     <script>
