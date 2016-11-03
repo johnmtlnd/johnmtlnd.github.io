@@ -16,7 +16,7 @@ title: Info
 
         <textarea name="message" placeholder="Holla!"></textarea>
         <input type="text" name="_gotcha" style="display:none" />
-        <input type="hidden" name="_next" value="//localhost:4000/thanks" />
+        <input type="hidden" name="_next" value="//www.johnmtlnd.com/thanks.html" />
         <input  class="button" type="submit" value="Send">
     </form>
     <script>
