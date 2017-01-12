@@ -17,11 +17,9 @@ layout: page
 
         <textarea name="message" placeholder="Holla!"></textarea>
         <input type="text" name="_gotcha" style="display:none" />
-<<<<<<< HEAD
         <input type="hidden" name="_next" value="//www.johnmtlnd.com/thanks.html" />
-=======
+
         <input type="hidden" name="_next" value="https://www.johnmtlnd.com/thanks.html" />
->>>>>>> refs/remotes/origin/master
         <input  class="button" type="submit" value="Send">
     </form>
     <script>
@@ -29,9 +27,8 @@ layout: page
         contactform.setAttribute('action', '//formspree.io/' + 'john' + '@' + 'johnmtlnd' + '.' + 'com');
     </script>
 
-<<<<<<< HEAD
+
 </div>
-=======
   </div>
   <div class="col-2-3">
     <h3 class="intro-text">Formed at <a href="http://www.arts.vcu.edu">VCUarts</a>. Currently working at <a href="http://www.riggsward.com">Riggs Ward Design</a> as an exhibit designer.
@@ -66,7 +63,6 @@ layout: page
               function showQuotation(){document.write(Quotation[whichQuotation]);}
               showQuotation();
         </script>."</p>
->>>>>>> refs/remotes/origin/master
 
 <div class="col-2-3">
 
