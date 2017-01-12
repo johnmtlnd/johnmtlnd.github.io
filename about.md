@@ -17,7 +17,11 @@ layout: page
 
         <textarea name="message" placeholder="Holla!"></textarea>
         <input type="text" name="_gotcha" style="display:none" />
+<<<<<<< HEAD
         <input type="hidden" name="_next" value="//www.johnmtlnd.com/thanks.html" />
+=======
+        <input type="hidden" name="_next" value="https://www.johnmtlnd.com/thanks.html" />
+>>>>>>> refs/remotes/origin/master
         <input  class="button" type="submit" value="Send">
     </form>
     <script>
@@ -25,7 +29,44 @@ layout: page
         contactform.setAttribute('action', '//formspree.io/' + 'john' + '@' + 'johnmtlnd' + '.' + 'com');
     </script>
 
+<<<<<<< HEAD
 </div>
+=======
+  </div>
+  <div class="col-2-3">
+    <h3 class="intro-text">Formed at <a href="http://www.arts.vcu.edu">VCUarts</a>. Currently working at <a href="http://www.riggsward.com">Riggs Ward Design</a> as an exhibit designer.
+        <script language="JavaScript">
+          var Quotation=new Array()
+
+          Quotation[0] = "Gazes at the stars <small>when I can see them</small>.";
+          Quotation[1] = "Loves pizza.";
+          Quotation[2] = "Sits too close to the screen.";
+          Quotation[3] = "Wears socks with sandals.";
+          Quotation[4] = "Bikes to work.";
+
+
+              var Q = Quotation.length;
+              var whichQuotation=Math.round(Math.random()*(Q-1));
+              function showQuotation(){document.write(Quotation[whichQuotation]);}
+              showQuotation();
+        </script>
+    </h3>
+
+    <h3 class="intro-text">I am a designer living and working in Richmond, VA exploring the world of pixels and bits from my desk.</h3>
+
+    <p>I have freelanced since high school in 2012 for a variety of small, local clients. I help people communicate their ideas on the web, in print, in logos, and in the world. I have a deep appreciation for home, space-making, typography, and design systems. You can find me at <a href="http://lamplightercoffee.com">Lamplighter Roasting Company</a> reading "<script language="JavaScript">
+          var Quotation=new Array()
+
+          Quotation[0] = "<a href='https://blog.prototypr.io/the-value-of-multi-typeface-design-ccd67227b0ee#.3aefrunpf'>The Value of Multi Typeface Design</a>";
+          Quotation[1] = "<a href='https://m.signalvnoise.com/why-i-love-ugly-messy-interfaces-and-you-probably-do-too-edff4a896a83#.jt1lvb4d0'>Why I Love Messy Interfaces</a>";
+
+
+              var Q = Quotation.length;
+              var whichQuotation=Math.round(Math.random()*(Q-1));
+              function showQuotation(){document.write(Quotation[whichQuotation]);}
+              showQuotation();
+        </script>."</p>
+>>>>>>> refs/remotes/origin/master
 
 <div class="col-2-3">
 
