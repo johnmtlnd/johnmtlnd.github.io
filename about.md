@@ -17,8 +17,6 @@ title: Info
           Quotation[2] = "Sits too close to the screen.";
           Quotation[3] = "Wears socks with sandals.";
           Quotation[4] = "Bikes to work.";
-
-
               var Q = Quotation.length;
               var whichQuotation=Math.round(Math.random()*(Q-1));
               function showQuotation(){document.write(Quotation[whichQuotation]);}
@@ -31,9 +29,9 @@ title: Info
     I have been lucky to work for a variety of small, local clients since 2014 and help people communicate their ideas. I am always looking for new design opportunities and places to share my ideas. You can find me at <a href="http://lamplightercoffee.com">Lamplighter Roasting Company</a> reading "<script language="JavaScript">
           var Quotation=new Array()
 
-          Quotation[0] = "<a href='https://blog.prototypr.io/the-value-of-multi-typeface-design-ccd67227b0ee#.3aefrunpf'>The Value of Multi Typeface Design</a>";
-          Quotation[1] = "<a href='https://m.signalvnoise.com/why-i-love-ugly-messy-interfaces-and-you-probably-do-too-edff4a896a83#.jt1lvb4d0'>Why I Love Messy Interfaces</a>";
-          Quotation[2] = "Dan Barber's <i>The Third Plate</i>";
+          Quotation[0] = <a href='https://blog.prototypr.io/the-value-of-multi-typeface-design-ccd67227b0ee#.3aefrunpf'>The Value of Multi Typeface Design</a>;
+          Quotation[1] = <a href='https://m.signalvnoise.com/why-i-love-ugly-messy-interfaces-and-you-probably-do-too-edff4a896a83#.jt1lvb4d0'>Why I Love Messy Interfaces</a>;
+          Quotation[2] = Dan Barber's <i>The Third Plate</i>;
 
 
               var Q = Quotation.length;
