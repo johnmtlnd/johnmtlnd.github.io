@@ -42,7 +42,7 @@ title: Info
               showQuotation();
         </script>."</h3>
 
-    Looking to start a project together? Got questions? Just want to shoot the breeze? Compose a finely worded email and let's start a <a href="mailto:hello@johnmtlnd.com">Gmail thread!</a></h3>
+    <p>Looking to start a project together? Got questions? Just want to shoot the breeze? Compose a finely worded email and let's start a <a href="mailto:hello@johnmtlnd.com">Gmail thread!</a></p>
 
     <a href="{{ site.cdn_path }}/john-maitland_resume.pdf">Resume</a>
     <hr>
