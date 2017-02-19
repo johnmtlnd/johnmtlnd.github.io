@@ -26,7 +26,7 @@ title: Info
         </script>
     </h1>
 
-    <h2 class="intro-text">This is the portfolio of John Maitland a designer & front-end web programmer living and work in Richmond, VA. Formed at <a href="http://www.arts.vcu.edu">VCUarts</a>. Currently working at <a href="http://www.riggsward.com">Riggs Ward Design</a>. I have been lucky to work for a variety of small, local clients since 2014 and help people communicate their ideas. I am always looking for new design opportunities and places to share my ideas. You can find me at <a href="http://lamplightercoffee.com">Lamplighter Roasting Company</a> reading "<script language="JavaScript">
+    <p class="intro-text">This is the portfolio of John Maitland a designer & front-end web programmer living and work in Richmond, VA. Formed at <a href="http://www.arts.vcu.edu">VCUarts</a>. Currently working at <a href="http://www.riggsward.com">Riggs Ward Design</a>. I have been lucky to work for a variety of small, local clients since 2014 and help people communicate their ideas. I am always looking for new design opportunities and places to share my ideas. You can find me at <a href="http://lamplightercoffee.com">Lamplighter Roasting Company</a> reading "<script language="JavaScript">
           var Quotation=new Array()
 
           Quotation[0] = "<a href='https://blog.prototypr.io/the-value-of-multi-typeface-design-ccd67227b0ee#.3aefrunpf'>The Value of Multi Typeface Design</a>";
@@ -39,7 +39,7 @@ title: Info
               function showQuotation(){document.write(Quotation[whichQuotation]);}
               showQuotation();
         </script>."
-  </h2>
+  </p>
 
   <p>Looking to start a project together? Got questions? Just want to shoot the breeze? Compose a finely worded email and let's start a <a href="mailto:hello@johnmtlnd.com">Gmail thread!</a></p>
 
