@@ -1,10 +1,6 @@
 // Typography
 //
 // Headings, body text, lists, and other misc typographic elements.
-@font-face {
-    font-family: "Verlag";
-    src: url({{ site.cdn_path}}/public/fonts/Verlag-Book.otf) format("opentype");
-}
 
 
 h1, h2, h3, h4, h5, h6 {
