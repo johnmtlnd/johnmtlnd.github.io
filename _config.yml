@@ -3,7 +3,7 @@ permalink:           none
 
 # Setup
 title:               John Maitland
-tagline:             Visual Designer
+tagline:             Designer & Programmer
 url:                 johnmtlnd.com
 paginate:            5
 baseurl:             ""
@@ -27,7 +27,7 @@ navigation:
 author:
   name:              John Maitland
   url:               https://twitter.com/johnmtlnd
-  email:             john@johnmtlnd.com
+  email:             hellojohnmtlnd.com
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -41,11 +41,11 @@ social:
     url: http://linkedin.com/in/johnmtlnd
 # Postal address (add as many lines as necessary)
 address:
-  - line: 16 S Brunswick St.
-  - line: Richmond, VA 23220
+  - line: 500 Hull St.
+  - line: Richmond, VA 23224
 
 # Credits content
-credits: ' Powered by Jekyll.<br> Hosted by Github Pages.'
+credits: 'Made with Jekyll.<br> Hosted by Github Pages.'
 
 cdn_path: /public/assets
 
