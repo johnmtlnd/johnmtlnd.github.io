@@ -8,9 +8,7 @@
 }
 
 .masthead-title {
-  font-family: $header-font-family;
   line-height: 70px;
-  font-weight: 900;
   margin-top: 0;
   margin-bottom: 0;
   color: $gray-5;
@@ -18,6 +16,7 @@
 
   a {
     color: inherit;
+    font-family: $header-font-family;
   }
 
   small {
