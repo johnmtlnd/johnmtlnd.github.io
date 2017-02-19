@@ -26,9 +26,9 @@ title: Info
         </script>
     </h1>
 
-    <h3 class="intro-text">This is the portfolio of John Maitland a designer & programmer living and work in Richmond, VA. Formed at <a href="http://www.arts.vcu.edu">VCUarts</a>. Currently working at <a href="http://www.riggsward.com">Riggs Ward Design</a>.</h3>
+    <h3 class="intro-text">This is the portfolio of John Maitland a designer & programmer living and work in Richmond, VA. Formed at <a href="http://www.arts.vcu.edu">VCUarts</a>. Currently working at <a href="http://www.riggsward.com">Riggs Ward Design</a>.
 
-    <h4>I have been lucky to work for a variety of small, local clients since 2014 and help people communicate their ideas. I am always looking for new design opportunities and places to share my ideas. You can find me at <a href="http://lamplightercoffee.com">Lamplighter Roasting Company</a> reading "<script language="JavaScript">
+    I have been lucky to work for a variety of small, local clients since 2014 and help people communicate their ideas. I am always looking for new design opportunities and places to share my ideas. You can find me at <a href="http://lamplightercoffee.com">Lamplighter Roasting Company</a> reading "<script language="JavaScript">
           var Quotation=new Array()
 
           Quotation[0] = "<a href='https://blog.prototypr.io/the-value-of-multi-typeface-design-ccd67227b0ee#.3aefrunpf'>The Value of Multi Typeface Design</a>";
@@ -40,9 +40,10 @@ title: Info
               var whichQuotation=Math.round(Math.random()*(Q-1));
               function showQuotation(){document.write(Quotation[whichQuotation]);}
               showQuotation();
-        </script>."</h4>
+        </script>."</h3>
 
-    <p>Looking to start a project together? Got questions? Just want to shoot the breeze? Compose a finely worded email and let's start a <a href="mailto:hello@johnmtlnd.com">Gmail thread!</a></p>
+    Looking to start a project together? Got questions? Just want to shoot the breeze? Compose a finely worded email and let's start a <a href="mailto:hello@johnmtlnd.com">Gmail thread!</a></h3>
+
     <a href="{{ site.cdn_path }}/john-maitland_resume.pdf">Resume</a>
     <hr>
     <h3>On The Web</h3>
