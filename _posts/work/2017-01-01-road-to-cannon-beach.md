@@ -7,4 +7,4 @@ category: work
 tags: [ web design, jekyll, sass, github ]
 ---
 
-<a href="http://roadtocannonbeach.bike"><img src=" {{ site.cdn_path }}/bike-build.site.png" /></a>
+<a href="http://roadtocannonbeach.bike"><img src=" {{ site.cdn_path }}/bike-build/site.png" /></a>
