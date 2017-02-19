@@ -1,6 +1,11 @@
 // Typography
 //
 // Headings, body text, lists, and other misc typographic elements.
+@font-face {
+    font-family: "Brandon Grotesque";
+    src: url({{ site.cdn_path}}/mycustomfont.otf) format("opentype");
+}
+
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
