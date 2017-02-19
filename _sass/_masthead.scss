@@ -8,6 +8,7 @@
 }
 
 .masthead-title {
+  font-family: $header-font-family;
   line-height: 70px;
   font-weight: 900;
   margin-top: 0;
@@ -21,7 +22,8 @@
 
   small {
     font-size: 60%;
-    font-weight: 300;
+    text-transform: capitalize;
+    font-family: 'Verlag-Reg';
     opacity: 0.5;
   }
 }

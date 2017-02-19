@@ -4,15 +4,15 @@
 
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font-family;
   font-weight: 600;
   text-transform: uppercase;
   color: $gray-5;
   text-rendering: optimizeLegibility;
-  font-family: $root-font-family;
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
 }
 
 h2 {
@@ -21,6 +21,8 @@ h2 {
 }
 
 h3 {
+  font-family: 'Verlag-Reg';
+  letter-spacing: 1px;
   margin-top: 1rem;
   font-size: 1.25rem;
 }

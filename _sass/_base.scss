@@ -35,8 +35,9 @@ body {
 a {
   color: $link-color;
   text-transform: uppercase;
+  letter-spacing: 1px;
   text-decoration: none;
-  font-family: $root-font-family;
+  font-family: $body-font-family;
 
   // `:focus` is linked to `:hover` for basic accessibility
   &:hover,
