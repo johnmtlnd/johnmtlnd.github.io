@@ -9,6 +9,7 @@
 
 .masthead-title {
   line-height: 70px;
+  font-weight: 900;
   margin-top: 0;
   margin-bottom: 0;
   color: $gray-5;
@@ -32,6 +33,7 @@ nav{
 
 nav ul li{
   display: inline-block;
+  text-transform: uppercase;
   padding: 0 20px;
 }
 
