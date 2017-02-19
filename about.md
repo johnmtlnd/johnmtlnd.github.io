@@ -8,7 +8,7 @@ title: Info
     <img src="{{ site.cdn_path}}/profile.png" alt="" >
   </div>
   <div class="col-2-3">
-    <h1 class="intro-text">
+    <h1>
         <script language="JavaScript">
           var Quotation=new Array()
 
@@ -26,8 +26,8 @@ title: Info
         </script>
     </h1>
 
-    <h3 class="intro-text">This is the portfolio of John Maitland a designer & programmer living and work in Richmond, VA. Formed at <a href="http://www.arts.vcu.edu">VCUarts</a>. Currently working at <a href="http://www.riggsward.com">Riggs Ward Design</a>.
-
+    <h2 class="intro-text">This is the portfolio of John Maitland a designer & programmer living and work in Richmond, VA. Formed at <a href="http://www.arts.vcu.edu">VCUarts</a>. Currently working at <a href="http://www.riggsward.com">Riggs Ward Design</a>.
+    <br />
     I have been lucky to work for a variety of small, local clients since 2014 and help people communicate their ideas. I am always looking for new design opportunities and places to share my ideas. You can find me at <a href="http://lamplightercoffee.com">Lamplighter Roasting Company</a> reading "<script language="JavaScript">
           var Quotation=new Array()
 
@@ -40,7 +40,7 @@ title: Info
               var whichQuotation=Math.round(Math.random()*(Q-1));
               function showQuotation(){document.write(Quotation[whichQuotation]);}
               showQuotation();
-        </script>."</h3>
+        </script>."</h2>
 
     <p>Looking to start a project together? Got questions? Just want to shoot the breeze? Compose a finely worded email and let's start a <a href="mailto:hello@johnmtlnd.com">Gmail thread!</a></p>
 
