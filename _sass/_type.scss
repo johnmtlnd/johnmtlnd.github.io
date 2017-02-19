@@ -3,7 +3,8 @@
 // Headings, body text, lists, and other misc typographic elements.
 @font-face {
     font-family: "Brandon Grotesque";
-    src: url({{ site.cdn_path}}/mycustomfont.otf) format("opentype");
+    src: url({{ site.cdn_path}}/public/fonts/Brandon_reg.otf) format("opentype");
+  
 }
 
 
