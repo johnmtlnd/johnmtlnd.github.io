@@ -8,13 +8,13 @@
 #portfolio-grid li {
     display: inline-block;
     *display:inline;/*for IE6 - IE7*/
-    width: 31%;
+    width: 33.3333%;
     vertical-align:middle;
     box-sizing:border-box;
     margin:0;
     padding:0;
-    margin-right: 2%;
-    margin-bottom: 2%;
+    border: 1px #fafafa;
+    border-style: dotted;
 }
 
 /* The wrapper for each item */
@@ -46,14 +46,14 @@
     bottom: 0;
     right: 0;
     margin: auto;
-    background: #FFD900 80%;
+    background: #EF002A 85%;
     background-size:50px 50px;
     opacity:0;
     filter:alpha(opacity=0);/*For IE6 - IE8*/
     transition:all 0.6s;
 }
 #portfolio-grid li:hover .grid-overlay {
-    opacity:0.8;
+    opacity:0.95;
 }
 
 /* If have captions */
@@ -66,10 +66,11 @@
     width:100%;
     text-align:center;
     text-transform:capitalize;
-    font-family: 'Lora', serif;
-    font-size:1.2rem;
+    font-size: 2rem;
+    font-family: 'Miller Display', serif;
+    letter-spacing: 0px;
     top:40%;
-    color:#202020;
+    color:#FAFAFA;
     opacity:0;
     filter:alpha(opacity=0);/*For older IE*/
     transform:translateY(-20px);
@@ -81,26 +82,31 @@
 }
 
 @media (max-width: 1200px) {
-    #portfolio-grid li {
-        width:31%;
+    #portfolio-grid li{
+        width:33.333%;
     }
 }
 
 @media (max-width: 700px) {
     #portfolio-grid li {
-        width:48%;
+        width:50%;
+        text-align: center;
     }
-    .post-header{
-      height:50px;
+    .masthead-title{
+      line-height: 20px;
     }
+
+
 }
 
 @media (max-width: 550px) {
     #portfolio-grid li {
         width:100%;
+        text-align: center;
     }
-    .post-header{
-      height: 40px;
+    .masthead-title{
+      line-height: 40px;
     }
+
 
 }

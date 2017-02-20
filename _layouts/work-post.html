@@ -1,12 +1,9 @@
 ---
-layout: page
+layout: default
 ---
 
 <div class="grid">
-  <div class="col-1-2">
-    <img src="{{ page.cover_image }}" alt="">
-  </div>
-  <article class="post-header col-1-2">
+  <article class="post-header col-5-12">
       <h2 class="post-title">{{ page.title }}</h2>
       <h3 datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</h3>
       <p class="post-subtitle">
@@ -14,10 +11,9 @@ layout: page
       </p>
   </article>
 
-  <section class="content col-1-1">
+  <section class="content col-7-12">
     {{ content }}
   </section>
-
 </div>
 
 

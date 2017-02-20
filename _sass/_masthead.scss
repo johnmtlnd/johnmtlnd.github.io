@@ -3,16 +3,32 @@
 // Super small header above the content for site name and short description.
 
 .masthead {
+  z-index: 999;
+  top: 0;
   padding-top:    1rem;
-  padding-bottom: 3rem;
+  background: $gray-1;
+  width: 95%;
+  position: fixed;
+
+  img{
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100px; height: auto;
+    display: inline;
+    line-height: 105px;
+  }
 }
 
 .masthead-title {
-  line-height: 70px;
+  line-height: 105px;
+  margin: 0; padding: 0;
   margin-top: 0;
   margin-bottom: 0;
-  color: $gray-5;
+  margin-right: 5%;
   float: left;
+
+
 
   a {
     color: inherit;
@@ -22,14 +38,16 @@
   small {
     font-size: 60%;
     text-transform: capitalize;
-    font-family: 'Verlag-Reg';
-    opacity: 0.5;
+    font-family:$serif-font-family;
+    color: $gray-3;
   }
 }
 
 nav{
   float: right;
-  line-height: 80px;
+  display: inline-block;
+  margin: 0; padding: 0;
+  line-height: 110px;
 }
 
 nav ul li{
@@ -74,9 +92,9 @@ li.current a{
 }
 
 footer{
-  margin-top: 2em;
+  margin-top: 5em;
 }
 
 small {
-  font-size: 80%;
+  font-size: 60%;
 }

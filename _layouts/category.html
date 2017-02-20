@@ -1,12 +1,11 @@
 ---
-layout: page
+layout: default
 ---
 
 {% for post in site.categories.[page.category] %}
   {% assign currentdate = post.date | date: "%Y" %}
   {% if currentdate != date %}
     <div class="post-preview grid">
-      <div class="col-10-12">
         {% unless forloop.first %}</ul>{% endunless %}
         <h1 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h1>
         <ul>
@@ -17,7 +16,6 @@ layout: page
           <h3 class="post-date">{{ post.date | date: '%d %B %Y' }}</h3>
         </li>
       {% if forloop.last %}</ul>{% endif %}
-      </div>
     </div>
 
 {% endfor %}

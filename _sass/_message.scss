@@ -35,7 +35,7 @@ textarea{
 
 .button{
   box-sizing: border-box;
-  border: 3px solid $yellow;
+  border: 3px solid $red;
   background: transparent;
   border-radius: 5px;
   width: 60%;
@@ -43,7 +43,7 @@ textarea{
 }
 
 .button:hover{
-  background: $yellow;
+  background: $red;
 
 }
 
