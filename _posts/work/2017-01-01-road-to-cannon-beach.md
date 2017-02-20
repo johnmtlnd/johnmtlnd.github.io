@@ -8,3 +8,7 @@ tags: [ web design, jekyll, sass, github ]
 ---
 
 <a href="http://roadtocannonbeach.bike"><img src="{{ site.cdn_path }}/bike-build/site.png" /></a>
+![ ]({{ site.cdn_path }}/bike-build/bnb0.png)
+![ ]({{ site.cdn_path }}/bike-build/bnb1.jpg)
+![ ]({{ site.cdn_path }}/bike-build/bnb2.jpg)
+![ ]({{ site.cdn_path }}/bike-build/bnb3.png)
