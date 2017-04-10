@@ -15,7 +15,7 @@ body {
 }
 
 html {
-  font-family: $serif-font-family;
+  font-family: $body-font-family;
   font-size: $root-font-size;
   line-height: $root-line-height;
 
@@ -34,7 +34,6 @@ body {
 // No `:visited` state is required by default (browsers will use `a`)
 a {
   color: $link-color;
-  letter-spacing: 1px;
   text-decoration: none;
   font-family: $body-font-family;
 
@@ -50,18 +49,43 @@ a {
   }
 }
 
-.page a{
-  border-bottom: 1px dotted $gray-3;
+img.site-logo{
+  float: left;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+  margin: 0 0 1rem;
+}
+
+div.hero{
+  top: 0;
+  left: 0;
+  position: relative;
+  width: 100%;
+}
+
+a{
+  border-bottom: 1px dotted $gray-4;
 
   &:hover{
-    border-bottom: 1px dotted $gray-2;
+    border-bottom: 1px dotted $gray-3;
   }
+}
+
+p {
+  margin: 0;
 }
 
 img {
   max-width: 100%;
   display: block;
   margin: 0 0 1rem;
+}
+
+.abt-info{
+  margin: 1em 0em;
 }
 
 section.content img{

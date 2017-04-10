@@ -16,18 +16,18 @@ sass:
   style:            :compressed
 
 navigation:
- - title: Projects
+ - title: John Maitland
    url: /index.html
+ - title: Projects
+   url: /work
  - title: Profile
    url: /about
- - title: Blog
-   url: /blog
 
 # About/contact
 author:
-  name:              John Maitland
-  url:               https://twitter.com/johnmtlnd
-  email:             hellojohnmtlnd.com
+  name:    John Maitland
+  url:     https://twitter.com/johnmtlnd
+  email:   hello@johnmtlnd.com
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -39,13 +39,19 @@ social:
     url: http://github.com/johnmtlnd
   - title: dribbble
     url: http://dribbble.com/johnmtlnd
+
 # Postal address (add as many lines as necessary)
-address:
-  - line: 500 Hull St.
-  - line: Richmond, VA 23224
+location:
+  neighborhood: Manchester
+  city: Richmond, VA
+
+job:
+  place: Riggs Ward Design
+  title: Designer
+
 
 # Credits content
-credits: 'Made with Jekyll.<br> Hosted by Github Pages.'
+credits: John Maitland, 2017. Made with Jekyll. Hosted by Github Pages. <br /> Code is published under GPL.'
 
 cdn_path: /public/assets
 

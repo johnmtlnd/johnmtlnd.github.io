@@ -5,36 +5,51 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $header-font-family;
-  letter-spacing: 1px;
-  text-transform: uppercase;
   color: $gray-5;
+  text-transform: uppercase;
   text-rendering: optimizeLegibility;
+  letter-spacing: 1.5px;
+  margin: 0; padding: 0;
 }
 
-h1 {
-  font-size: 1.75rem;
+h1.intro{
+  font-family: $header-font-family;
+  font-size: 5rem;
+  line-height: 5rem;
+  display: inline-block;
+  margin: 40px 0px;
+  margin-bottom: 0;
+  color: $blue;
+  text-transform:  none;
+  min-height: 400px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1.intro:hover{
+  color: $gray-2;
+  text-shadow:
+    -1px -1px 0 $blue,
+    1px -1px 0 $blue,
+    -1px 1px 0 $blue,
+    1px 1px 0 $blue;
+    -webkit-font-smoothing: antialiased;
 }
 
 h2 {
-  margin-top: 1rem;
   font-size: 1.25rem;
+  margin: 0;
+  letter-spacing: 0.5px;
 }
 
 h3 {
-  font-family: 'Verlag-Reg';
   letter-spacing: 1px;
-  margin-top: 1rem;
-  font-size: 1.25rem;
-}
-
-h4, h5, h6 {
-  margin-top: 1rem;
   font-size: .8rem;
 }
 
-
-strong {
-  color: #303030;
+h3 a{
+  text-transform: none;
+  font-family: $body-font-family;
+  font-size: 1rem;
 }
 
 ul, ol, dl {
@@ -54,7 +69,7 @@ hr {
   position: relative;
   margin: 1rem 0;
   border: 0;
-  border-top: 1px solid $gray-2;
+  border-top: 1px solid $gray-3;
 }
 
 abbr {
@@ -86,6 +101,7 @@ blockquote {
 }
 
 
+
 // Markdown footnotes
 //
 // See the example content post for an example.
@@ -114,5 +130,8 @@ a[href^="#fnref:"] {
 }
 
 .intro-text{
-  font-size: 1.15rem;
+  font-size: 1.5rem;
+  line-height: 2.35rem;
+  font-family: $body-font-family;
+  margin-bottom: 1em;
 }

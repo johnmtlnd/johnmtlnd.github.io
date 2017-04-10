@@ -7,20 +7,9 @@
 
     <div class="wrapper content">
       <header class="masthead clearfix">
-        <img class="hide-on-mobile" src="{{ site.cdn_path }}/logo.svg" width="100px" height="auto" alt=" site-logo">
         <h1 class="masthead-title">
-          <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
           <small class="hide-on-mobile">{{ site.tagline }}</small>
         </h1>
-        <ul class="home-social">
-          {% for network in site.social %}
-          <li>
-            <a href="{{ network.url }}">
-              {{ network.title }}
-            </a>
-          </li>
-          {% endfor %}
-        </ul>
         <nav>
           <ul>
             {% for link in site.navigation %}
@@ -34,6 +23,15 @@
               {% endfor %}
           </ul>
         </nav>
+        <ul class="home-social" style="float:right;">
+          {% for network in site.social %}
+          <li>
+            <a href="{{ network.url }}">
+              <i class="fa fa-{{ network.title }}"></i>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
       </header>
       <div class="container">
           <main>
@@ -52,7 +50,6 @@
        ga('send', 'pageview');
      </script>
     {% endif %}
-
 
   </body>
 </html>

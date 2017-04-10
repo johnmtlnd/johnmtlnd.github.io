@@ -3,15 +3,19 @@ layout: default
 ---
 
 <div class="grid">
-  <article class="col-5-12">
-      <h2 class="post-title">{{ page.title }}</h2>
-      <h3 datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</h3>
+  <article>
+    <div class="col-1-2 post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+    </div>
+    <div class="col-1-2">
+      <h3 class="post-date">Project Description</h3>
       <p class="post-subtitle">
           {{ page.description }}
       </p>
+    </div>
   </article>
 
-  <section class="content col-7-12">
+  <section class="content col-1">
     {{ content }}
   </section>
 </div>
@@ -34,3 +38,5 @@ layout: default
   </ul>
 </aside>
 {% endif %}
+
+{% include footer.html %}

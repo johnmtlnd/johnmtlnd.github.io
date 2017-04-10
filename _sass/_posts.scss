@@ -5,30 +5,21 @@
 
 .page,
 .post {
-  margin-top: 3em;
+  margin-top: 1em;
   margin-bottom: 1em;
 
   li + li {
     margin-top: .25rem;
   }
 }
-
 .post{
   width: 100%;
   margin: 0 auto;
 }
-
-.post-subtitle{
-  display: block;
-  margin-top: 3.5em;
-  margin-bottom: 1em;
-}
-
 // Blog post or page title
 .page-title,
 .post-title,
 .post-title a {
-  float: left;
   color: $gray-5;
 }
 .page-title,
@@ -36,19 +27,8 @@
   margin-top: 0;
 }
 
-.post-preview h1{
-  font-size: 2rem;
-
-}
 .post-header{
-  position: absolute;
-}
-
-h3.post-date{
-  font-weight: normal;
-  float: right;
-  margin-top: 0;
-  opacity: 0.25;
+  position: relative;
 }
 
 .post-preview>ul>li{
@@ -58,7 +38,16 @@ h3.post-date{
 }
 
 .post-preview>ul>li:hover{
-  background: $red;
+  background: $gray-2;
+}
+
+.post-subtitle{
+  font-size: .9rem;
+}
+
+article{
+  min-height: 20vh;
+  margin-bottom: 1em;
 }
 
 
@@ -68,8 +57,8 @@ h3.post-date{
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  border-top: 1px dotted #eee;
+  border-bottom: 1px dotted #eee;
 }
 
 .related-posts {
@@ -87,7 +76,7 @@ h3.post-date{
     }
 
     a:hover {
-      color: #268bd2;
+      color: $gray-2;
       text-decoration: none;
 
       small {
@@ -97,110 +86,28 @@ h3.post-date{
   }
 }
 
-ul.social,
-ul.home-social{
-    display: block;
-    margin: 0;
-    padding: 0;
-    width: auto;
-    position: relative;
-    display: inline-block;
+ul.social li{
+  display: inline-block;
+  width: 24%;
+  margin: 0; padding: 0;
 }
 
-ul.home-social{
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-  line-height: 100px;
-}
-
-@media (max-width: 1100px) {
-
-
-  .masthead {
-    img{
-      display: none;
-    }
-  }
-
-
-    .masthead-title,
-    nav,
-    ul.home-social{
-      line-height: 40px;
-      text-align: center;
-      float: none;
-      width: 100%;
-    }
-    .home-social li{
-      text-align: center;
-    }
-    .container{
-      margin-top: 200px;
-    }
-}
-
-@media (max-width: 960px) {
-  nav,
-  ul.home-social{
-    line-height: 40px;
-    text-align: center;
-    float: none;
-    width: 100%;
-  }
-
-  .container{
-    margin-top: 160px;
-  }
-}
-
-@media (max-width: 550px) {
-
-    ul.home-social{
-      width: 100%;
-      line-height: 40px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-}
-
-.social li,
-.home-social li{
-    list-style: none;
-    display: inline-block;
-    padding:0 7px;
-    margin:7px 0px;
-}
-.home-social li a{
-  color: $red;
-  text-align: center;
-}
-
-.home-social li:first-child,
 .social li:first-child{
-    padding-left: 0;
+  padding-left: 0;
 }
 
-.home-social li:after,
-.social li:after{
-    content:"\2014";
-    padding-left: 15px;
-    color: $red;
-}
-
-.home-social li:last-child:after,
-.social li:last-child:after{
-    content: none;
+ul.tasks li{
+  list-style: circle;
+  font-size: .9em;
 }
 
 time{
-  font-family: $body-font-family;
+  font-family: $header-font-family;
 }
 
 [class*='col-'] {
 	float: left;
-	padding-right: 40px; /* column-space */
+	padding-right: 60px; /* column-space */
 }
 
 .grid {

@@ -3,15 +3,16 @@ layout: default
 ---
 
 <div class="grid">
-  <article class="post-header col-7-12">
+  <article class="post-header col-1">
     <img src="{{page.cover_image }}" alt="" />
       <h2 class="post-title">{{ page.title }}</h2>
       <h3 datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</h3>
-  <p class="post-subtitle">
-    {{ content }}
-  </p>
-</article>
-
+  </article>
+  <div class="col-6-12">
+    <p class="post-subtitle">
+      {{ content }}
+    </p>
+  </div>
 
 {% if site.related_posts != empty %}
 <aside class="related">
