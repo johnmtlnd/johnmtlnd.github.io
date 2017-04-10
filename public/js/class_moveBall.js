@@ -52,12 +52,12 @@ MovingBall.prototype.checkBounds = function () {
 
 MovingBall.prototype.reset = function () {
 
-  var numDirections = 20,
+  var numDirections = 10,
     angleUnit;
 
   this.step = 1;
   this.inc = random( 0.015 );
-  this.radius = random( 5, 200 );
+  this.radius = random( 5, 100 );
   angleUnit = TAU * random(sin(numDirections));
   this.direction = parseInt( random( numDirections ) );
 
@@ -66,7 +66,7 @@ MovingBall.prototype.reset = function () {
 }
 
 MovingBall.prototype.display = function () {
-  var c = color( 210, 220, 220, 75);
+  var c = color( 190, 210, 210, 50);
 
   noStroke();
   value = alpha(c);

@@ -8,7 +8,7 @@ function setup() {
 
   createCanvas( windowWidth, windowHeight );
 
-  numOfObjects = 900;
+  numOfObjects = 600;
 
   centre = new MovingBall( width / 2, height / 2 );
   arounds = new Array( numOfObjects );
@@ -17,11 +17,10 @@ function setup() {
     arounds[i] = new MovingBall( random( width ), random( height ) );
   }
 
-  background(250,250,250);
+  background(255);
 }
 
 function draw() {
-
 
   centre.run();
 
