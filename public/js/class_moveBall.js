@@ -40,9 +40,7 @@ MovingBall.prototype.move = function () {
   this.checkBounds();
 }
 
-// checkBounds
-// checks that the MovingBall is within the display window.
-// If it reaches the edge, move in the opposite direction
+
 MovingBall.prototype.checkBounds = function () {
 
   if ( this.x <= 0 || this.x >= width || this.y <= 0 || this.y >= height ) {
@@ -54,24 +52,24 @@ MovingBall.prototype.checkBounds = function () {
 
 MovingBall.prototype.reset = function () {
 
-  var numDirections = 15,
+  var numDirections = 20,
     angleUnit;
 
   this.step = 1;
-  this.inc = random( 0.01 );
-  this.radius = random( 35, 35 );
-  angleUnit = TWO_PI * random(sin(numDirections));
+  this.inc = random( 0.015 );
+  this.radius = random( 5, 200 );
+  angleUnit = TAU * random(sin(numDirections));
   this.direction = parseInt( random( numDirections ) );
 
   this.tx = this.x + this.radius * cos( this.direction * angleUnit );
   this.ty = this.y + this.radius * sin( this.direction * angleUnit );
 }
 
-// display method
-// draws the MovingBall as a transparent circle with a red point at the centre
 MovingBall.prototype.display = function () {
+  var c = color( 210, 220, 220, 75);
 
   noStroke();
-  fill( 255, 35 );
-  ellipse( this.x, this.y, 2,2 );
+  value = alpha(c);
+  fill( c );
+  ellipse( this.x, this.y, 3,3 );
 }
