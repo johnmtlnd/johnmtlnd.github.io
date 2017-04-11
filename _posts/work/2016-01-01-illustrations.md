@@ -4,11 +4,7 @@ title: Illustrations
 cover_image: /public/assets/covers/illustrations-cover.png
 description: Drawings and vectors from here, there, and everywhere.
 category: work
-tags: { sketching vector drawing }
 ---
-
-
-
 
 <div class="grid">
   <img src="/public/assets/illustrations/2015-PNW-beard-co.png" alt=" ">

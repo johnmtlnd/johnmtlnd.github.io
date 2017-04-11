@@ -4,7 +4,6 @@ title: Generative Fabric Designs
 cover_image: /public/assets/covers/fab-cover-1.jpg
 description: Using Processing I generated fabric design patterns based on architectural elements from eastern cultures. Each pattern is printed into its own tapestry manifesting itself physically from architecture to graphic element to pattern design.
 category: work
-tags: { programming digital print fabric architecture }
 ---
 
 ![ ]({{ site.cdn_path }}/fabric/fab-0.jpg)

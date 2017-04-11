@@ -4,7 +4,6 @@ title: Sight Unseen UI
 cover_image: /public/assets/covers/su-cover.jpg
 description: User interface concept for Blackout VR's demo game Sight Unseen.
 category: work
-tags: { ui design blackout }
 ---
 
 ![ ]({{ site.cdn_path }}/su-ui/ui-0.png)
