@@ -2,9 +2,8 @@
 layout: work-post
 title: Sight Unseen UI
 cover_image: /public/assets/covers/su-cover.jpg
-description: Blackout VR is a sound based gaming starting. I worked closely with their game design team to establish a brand and logo around Blackout VR. Check out the website at sightunseen.audio
+description: User interface concept for Blackout VR's demo game Sight Unseen.
 category: work
-tags: [ ui, design, blackout ]
 ---
 
 ![ ]({{ site.cdn_path }}/su-ui/ui-0.png)
