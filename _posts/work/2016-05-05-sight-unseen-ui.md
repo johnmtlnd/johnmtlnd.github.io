@@ -7,8 +7,6 @@ category: work
 tags: [ ui, design, blackout ]
 ---
 
-Blackout VR is a sound based gaming starting. I worked closely with their game design team to establish a brand and logo around Blackout VR. Check out the website at sightunseen.audio
-
 ![ ]({{ site.cdn_path }}/su-ui/ui-0.png)
 ![ ]({{ site.cdn_path }}/su-ui/ui-1.png)
 ![ ]({{ site.cdn_path }}/su-ui/ui-2.png)
