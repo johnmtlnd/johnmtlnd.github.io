@@ -4,7 +4,7 @@ title: Illustrations
 cover_image: /public/assets/covers/illustrations-cover.png
 description: Drawings and vectors from here, there, and everywhere.
 category: work
-tags: [ sketching, vector, drawing ]
+tags: [ sketching vector drawing ]
 ---
 
 

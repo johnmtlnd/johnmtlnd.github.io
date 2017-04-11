@@ -2,9 +2,9 @@
 layout: work-post
 title: BCWH Proposal Design
 cover_image: /public/assets/covers/bcwh-cover.jpg
-description: Print re-design creating a more succinct and flexible proposal for work acquisition at BCWH. 
+description: Print re-design creating a more succinct and flexible proposal for work acquisition at BCWH.
 category: work
-tags: [ print, internship, book design, typography ]
+tags: [ print internship book design typography ]
 ---
 
 This document required flexibility in scope because proposals are always changing in size and content. The design accomodates all possibilities in the RFP process while easily preserving spread format for the production designer so it can be as easy as drag, drop, and print.

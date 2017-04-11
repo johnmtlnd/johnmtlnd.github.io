@@ -4,7 +4,7 @@ title: Atlanta History Center Mailer
 cover_image: /public/assets/covers/ahc-cover.png
 description: A print mailer for the opening of Atlanta History Center's "Gatheround" exhibit designed by Riggs Ward Design.
 category: work
-tags: [ logos, branding ]
+tags: [ logos branding ]
 ---
 
 ![ ]({{ site.cdn_path }}/rwd/ahc/ahc-0.png)

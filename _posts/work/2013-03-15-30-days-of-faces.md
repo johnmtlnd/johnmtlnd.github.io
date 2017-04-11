@@ -4,7 +4,7 @@ title: 30 Days of Faces
 cover_image: /public/assets/covers/faces-cover.jpg
 description: A catalogue of icons made up of faces of my classmates. Each face was collected over a period of thirty days based on my individual interactions.
 category: work
-tags: [ concept, poster, print ]
+tags: [ concept poster print ]
 ---
 
 ![ ]({{ site.cdn_path }}/faces/faces-00.jpg)
