@@ -46,7 +46,7 @@
 }
 
 article{
-  min-height: 20vh;
+  min-height: 10vh;
   margin-bottom: 1em;
 }
 
@@ -107,7 +107,7 @@ time{
 
 [class*='col-'] {
 	float: left;
-	padding-right: 60px; /* column-space */
+	padding-right: 20px; /* column-space */
 }
 
 .grid {

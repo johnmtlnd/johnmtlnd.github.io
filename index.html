@@ -7,7 +7,6 @@ permalink: index.html
 {% include p5js.html%}
 
 <div class="hero">
-  <div class="container">
     <div class="grid">
       <div class="col-3-12 hide-on-mobile">
         <a href="{{ site.baseurl }}"><img class="site-logo" src="{{ site.cdn_path }}/logo.svg" width="250px" height="auto" alt="site-logo"></a>
@@ -36,13 +35,12 @@ permalink: index.html
         <h3><a href="mailto:hello@johnmtlnd.com">{{ site.author.email }}</a></h3>
       </div>
     </div>
-  </div>
 </div>
 
 <div class="posts">
     <ul id="portfolio-grid">
       <h2>Recent</h2>
-      {% for post in site.categories['work'] limit:6 %}
+      {% for post in site.categories['work'] limit:4 %}
         <li>
             <a class="cell" href="{{ post.url }}">
                 <img class="grid-img" src="{{ post.cover_image }}" alt="">
@@ -54,9 +52,6 @@ permalink: index.html
     </ul>
     <h4><a href="{{ site.baseurl }}/work">See the rest →</a></h4>
 </div>
-
-
-{% include footer.html %}
 
 <script src="{{ site.baseurl }}/public/js/jquery-2.1.1.js"></script>
 <script src="{{ site.baseurl }}/public/js/slider.js"></script>

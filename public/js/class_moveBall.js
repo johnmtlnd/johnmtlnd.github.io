@@ -66,7 +66,7 @@ MovingBall.prototype.reset = function () {
 }
 
 MovingBall.prototype.display = function () {
-  var c = color( 190, 210, 210, 50);
+  var c = color( 225, 225, 225, 50);
 
   noStroke();
   value = alpha(c);

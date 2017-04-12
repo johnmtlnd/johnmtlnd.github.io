@@ -14,15 +14,15 @@ h1, h2, h3, h4, h5, h6 {
 
 h1.intro{
   font-family: $header-font-family;
-  font-size: 5rem;
-  line-height: 5rem;
+  font-size: 4.75rem;
+  line-height: 4.75rem;
+  letter-spacing: -.25px;
   display: inline-block;
   margin: 40px 0px;
   margin-bottom: 0;
   color: $blue;
   text-transform:  none;
-  min-height: 400px;
-  -webkit-font-smoothing: antialiased;
+  min-height: 300px;
 }
 
 h2 {
@@ -42,9 +42,15 @@ h3 a{
   font-size: 1rem;
 }
 
+h4{
+  font-size: .8rem;
+}
 ul, ol, dl {
   margin-top: 0;
   margin-bottom: 1rem;
+}
+a{
+  text-transform: none;
 }
 
 dt {
