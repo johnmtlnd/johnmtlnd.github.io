@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Permalinks
 permalink:           none
 
@@ -7,7 +6,7 @@ title:               John Maitland
 tagline:             Designer & Programmer
 url:                 johnmtlnd.com
 paginate:            5
-baseurl:             ""
+baseurl:             "johnmtlnd.com"
 
 # Assets
 #
@@ -115,7 +114,7 @@ job:
 
 
 # Credits content
-credits: John Maitland, 2017. Made with Jekyll. Hosted by Github Pages. <br /> Code is published under GPL.'
+credits: John Maitland, 2017. Made with Jekyll. Hosted by Github Pages. Code is published under GPL.
 
 cdn_path: /public/assets
 
@@ -124,4 +123,3 @@ cdn_path: /public/assets
 gems:
   - jekyll-paginate
   - jekyll-gist
->>>>>>> origin/master
