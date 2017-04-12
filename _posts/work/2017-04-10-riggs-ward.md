@@ -6,5 +6,8 @@ description: A smattering of logo concepts for branches of Riggs Ward Design.
 category: work
 ---
 
-![ ]({{ site.cdn_path }}/rwd/rwd-cutsheet.png)
-![ ]({{ site.cdn_path }}/rwd/rwd-animated.gif)
+<div class="col-5-12 center" style="float: none;" >
+  <img src="{{ site.cdn_path }}/rwd/logo/rwd-animated.gif" />
+</div>
+
+![ ]({{ site.cdn_path }}/rwd/logo/rwd-cutsheet.png)
