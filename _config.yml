@@ -60,7 +60,7 @@ cdn_path: /public/assets
 gems:
   - jekyll-paginate
   - jekyll-gist
-=======
+
 # Permalinks
 permalink:           none
 
