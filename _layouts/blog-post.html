@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="grid">
+  <article class="post-header col-1">
+    <img src="{{page.cover_image }}" alt="" />
+      <h2 class="post-title">{{ page.title }}</h2>
+      <h3 datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</h3>
+  </article>
+  <div class="col-6-12">
+    <p class="post-subtitle">
+      {{ content }}
+    </p>
+  </div>
+
+{% if site.related_posts != empty %}
+<aside class="related">
+  <h3>Related posts</h3>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:5 %}
+      <li>
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          {{ post.title }}
+          <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</aside>
+{% endif %}

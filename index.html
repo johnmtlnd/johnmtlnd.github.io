@@ -1,0 +1,57 @@
+---
+layout: page
+title: Home
+permalink: index.html
+---
+
+{% include p5js.html%}
+
+<div class="hero">
+    <div class="grid">
+      <div class="col-3-12 hide-on-mobile">
+        <a href="{{ site.baseurl }}"><img class="site-logo" src="{{ site.cdn_path }}/logo.svg" width="250px" height="auto" alt="site-logo"></a>
+      </div>
+      <div class="col-9-12">
+        <h1 class="intro" id="change">
+          I am a designer that uses typefaces ironically.
+              <script>
+                var texts = [
+                  "Even pixels aren't perfect.",
+                  "I am a designer that embodies my inner whimsical fashionista.",
+                  "I am a designer that wears socks with sandals.",
+                  "I also bake bread.",
+                  "I am a designer that likes pizza. Like, really loves pizza.",
+                  "I am a designer that uses typefaces ironically.",
+                  "Design, bread, coffee, bike + anything else that matters.",
+                  "I am a designer that shouts my own name in a styilized battle cry."];
+                var count = 0;
+                function changeText() {
+                    $("#change").text(texts[count]);
+                    count < 8 ? count++ : count = 0;
+                }
+                setInterval(changeText, 3000);
+              </script>
+        </h1>
+        <h3><a href="mailto:hello@johnmtlnd.com">{{ site.author.email }}</a></h3>
+      </div>
+    </div>
+</div>
+
+<div class="posts">
+    <ul id="portfolio-grid">
+      <h2>Recent</h2>
+      {% for post in site.categories['work'] limit:4 %}
+        <li>
+            <a class="cell" href="{{ post.url }}">
+                <img class="grid-img" src="{{ post.cover_image }}" alt="">
+                <span class="grid-overlay"></span>
+                <span class="post-meta">{{ post.title }}</span>
+            </a>
+        </li>
+      {% endfor %}
+    </ul>
+    <h4><a href="{{ site.baseurl }}/work">See the rest →</a></h4>
+</div>
+
+<script src="{{ site.baseurl }}/public/js/jquery-2.1.1.js"></script>
+<script src="{{ site.baseurl }}/public/js/slider.js"></script>
