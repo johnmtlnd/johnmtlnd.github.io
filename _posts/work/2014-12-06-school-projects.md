@@ -3,7 +3,7 @@ layout: work-post
 title: Student work
 cover_image: /public/assets/covers/clark-cover.jpg
 description: A few samples of work I made while at VCU from 2013 to 2016.
-category: pending-work
+category: work
 ---
 
 ### 'This is Your Park' Kiosk
