@@ -18,8 +18,8 @@ permalink: index.html
                 var texts = [
                   "Even pixels aren't perfect.",
                   "I am a designer that embodies my inner whimsical fashionista.",
-                  "I am a designer that wears socks with sandals.",
-                  "I also bake bread.",
+                  "I wear socks with my sandals.",
+                  "Disciplined design in multiple disciplines.",
                   "I am a designer that likes pizza. Like, really loves pizza.",
                   "I am a designer that uses typefaces ironically.",
                   "Design, bread, coffee, bike + anything else that matters.",
@@ -29,7 +29,7 @@ permalink: index.html
                     $("#change").text(texts[count]);
                     count < 8 ? count++ : count = 0;
                 }
-                setInterval(changeText, 3000);
+                setInterval(changeText, 4000);
               </script>
         </h1>
         <h3><a href="mailto:hello@johnmtlnd.com">{{ site.author.email }}</a></h3>
@@ -40,7 +40,7 @@ permalink: index.html
 <div class="posts">
     <ul id="portfolio-grid">
       <h2>Recent</h2>
-      {% for post in site.categories['work'] limit:4 %}
+      {% for post in site.categories['work'] limit:8 %}
         <li>
             <a class="cell" href="{{ post.url }}">
                 <img class="grid-img" src="{{ post.cover_image }}" alt="">
@@ -50,7 +50,7 @@ permalink: index.html
         </li>
       {% endfor %}
     </ul>
-    <h4><a href="{{ site.baseurl }}/work">See the rest →</a></h4>
+    <h3><a href="{{ site.baseurl }}/work">See the rest →</a></h3>
 </div>
 
 <script src="{{ site.baseurl }}/public/js/jquery-2.1.1.js"></script>
