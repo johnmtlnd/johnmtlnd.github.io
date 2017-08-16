@@ -13,7 +13,7 @@ category: work
 ![ ]({{ site.cdn_path }}/park/kiosk-1.jpg)
 ![ ]({{ site.cdn_path }}/park/kiosk-2.jpg)
 
-###Sebastian P. Clark
+### Sebastian P. Clark
 ![ ]({{ site.cdn_path }}/sebastian/clark-2.jpg)
 ![ ]({{ site.cdn_path }}/sebastian/clark-0.jpg)
 ![ ]({{ site.cdn_path }}/sebastian/clark-1.jpg)
