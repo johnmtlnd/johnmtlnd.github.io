@@ -1,5 +1,4 @@
-# Solo 
+# johnmtlnd.com
+my webspace where i can comment on the things that i make and share them with you. 
 
-[Solo](http://chibicode.github.io/solo) is a Jekyll theme that supports **single-page websites** only, but supports them well. Yes, it's responsive.
-
-### [Demo & Documentation &rarr;](http://chibicode.github.io/solo)
+Made with [jekyll](https://jekyllrb.com), a static site generator. Using a custom variation of [@mdo](http://www.markdotto.com)'s Poole theme. 
