@@ -1,18 +1,94 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="{{ site.description }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.title }}</title>
-  <link rel="stylesheet" href="css/main.css">
-{% include head.html %}
-</head>
-<body>
-  <div class="container">
-    {{ content }}
-  </div>
-{% include scripts.html %}
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+  {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/normalize.css?v=' | append: site.github.build_revision | relative_url }}">
+
+    <link rel="stylesheet" href="{{ '/assets/css/jquery.fullpage.min.css?v=' | append: site.github.build_revision | relative_url }}">
+
+  <link rel="stylesheet" href="{{ '/assets/css/skeleton.css?v=' | append: site.github.build_revision | relative_url }}">
+  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="/"><img class="site-logo" src="/{{ site.cdn_path }}/logo.svg" width="90px" height="auto" alt="site-logo"></a>
+
+        <a href="/"><img class="site-name" src="/{{ site.cdn_path }}/name.svg" width="200px" height="auto" alt="site-name"></a>
+
+        <nav>
+          <!--<ul>
+            {% for link in site.navigation %}
+            {% assign current = nil %}
+            {% if page.url contains link.url %}
+            {% assign current = 'current' %}
+            {% endif %}
+            <li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+              <a href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>-->
+          <ul>
+            {% for network in site.social %}
+            <li>
+              <a href="{{ network.url }}">
+                <i class="fa fa-{{ network.title }}"></i>
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </nav>
+
+        {% if site.github.is_project_page %}
+        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ github_name }}</small></a></p>
+        {% endif %}
+
+        {% if site.github.is_user_page %}
+        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+        {% endif %}
+      </header>
+      
+      <div class="wrap">
+        {{ content }}
+      </div>
+      <footer>
+       <a href="mailto:{{ site.author.email }}"><img class="site-hand" src="/{{ site.cdn_path }}/hand.svg" width="40px" height="auto" alt="site-hand"></a>
+       <p>{{ site.credits }}</p>
+     </footer>
+   </div>
+   <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+   <script src="{{ '/assets/js/jquery.fullpage.min.js' | relative_url }}"></script>
+
+
+   {% if site.google_analytics %}
+   <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '{{ site.google_analytics }}', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+        css3: true
+      });
+    });
+  </script>
+  {% endif %}
 </body>
 </html>

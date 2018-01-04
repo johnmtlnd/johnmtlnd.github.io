@@ -1,9 +1,43 @@
-# Site settings
 title: John Maitland
-description: John Maitland is a designer in Richmond, VA working for Campfire & Co.
+description: Designer.
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-minimal
 
-# Build settings
-markdown: kramdown
-exclude: ["README.md"]
-sass:
-  style: compressed
+navigation:
+ - title: Projects
+   url: /work
+ - title: Info
+   url: /about
+
+# About/contact
+author:
+  name:    John Maitland
+  url:     https://twitter.com/johnmtlnd
+  email:   hello@johnmtlnd.com
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/johnmtlnd
+  - title: instagram
+    url: http://instagram.com/johnmtlnd
+  - title: github
+    url: http://github.com/johnmtlnd
+  - title: dribbble
+    url: http://dribbble.com/johnmtlnd
+
+# Postal address (add as many lines as necessary)
+location:
+  neighborhood: Lakeside
+  city: Richmond, VA
+
+job:
+  place: Campfire & Co.
+  title: Designer
+
+
+# Credits content
+credits: John Maitland, 2018. Made with Jekyll. Hosted by Github Pages. Code is published under GPL.
+
+cdn_path: ../assets
