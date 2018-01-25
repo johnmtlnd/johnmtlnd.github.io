@@ -163,7 +163,7 @@ hr {
 footer {
   position: fixed;
   width: 95%;
-  z-index: 2;
+  z-index: -1;
   bottom: 25px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
