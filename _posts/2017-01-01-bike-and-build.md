@@ -1,7 +1,10 @@
 ---
 layout: work-post
+year: 2017
+cover_image: /assets/covers/bb-cover.jpg
 title: Bike & Build
-description: In the summer of 2017, I stepped away from the desk and rode my bike across the U.S.A. raising money and awareness for affordable housing with Bike & Build. 
+snippet: I stepped away from the desk and rode my bike across the U.S.A. raising money and awareness for affordable housing.
+permalink: /adventures/bike-build
 category: work
 ---
 

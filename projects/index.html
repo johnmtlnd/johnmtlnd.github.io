@@ -1,0 +1,76 @@
+---
+layout: default
+title: Work
+---
+
+
+<div class="container">
+  <h3>A portion of my recent & non-recent work &mdash;</h3>
+  <br>
+  <section>
+    <div class="row">
+    <ul>
+      {% for post in site.categories['work'] | limit: 3 %}
+      <li class="one-third column">
+          <div>
+            <h2 class="project-name">
+              <span>
+                <a href="{{ post.url }}">
+                  {{ post.title }}
+                </a>
+              </span>
+            </h2>
+            <p>{{ post.snippet }}</p>
+            <h3 class="year">{{ post.year }}</h3>
+          </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  </section>
+  <section>
+    <div class="row">
+    <ul>
+      {% for post in site.categories['work'] | limit: 3 | offset: 3 %}
+
+      <li class="one-third column">
+          <div>
+            <h2 class="project-name">
+              <span>
+                <a href="{{ post.url }}">
+                  {{ post.title }}
+                </a>
+              </span>
+            </h2>
+            <p>{{ post.snippet }}</p>
+            <h3 class="year">{{ post.year }}</h3>
+          </div>
+      </li>
+      {% endfor %}
+    </ul>
+    </div>
+  </section>
+  <section>
+    <div class="row">
+    <ul>
+      {% for post in site.categories['work'] | offset: 6 %}
+
+      <li class="one-third column">
+          <div>
+            <h2 class="project-name">
+              <span>
+                <a href="{{ post.url }}">
+                  {{ post.title }}
+                </a>
+              </span>
+            </h2>
+            <p>{{ post.snippet }}</p>
+            <h3 class="year">{{ post.year }}</h3>
+          </div>
+      </li>
+      {% endfor %}
+    </ul>
+    </div>
+  </section>
+
+</div>

@@ -19,7 +19,7 @@ To use the Minimal theme:
 2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
 
     ```ruby
-    gem "github-pages", group: :jekyll_plugins
+    gem "jekyll", group: :jekyll_plugins
     ```
 
 

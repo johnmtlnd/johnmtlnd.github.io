@@ -4,11 +4,6 @@ show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
 
-navigation:
- - title: Projects
-   url: /work
- - title: Info
-   url: /about
 
 # About/contact
 author:
@@ -29,12 +24,21 @@ social:
 
 # Postal address (add as many lines as necessary)
 location:
-  neighborhood: Lakeside
+  neighborhood: Shockoe
   city: Richmond, VA
 
 job:
   place: Campfire & Co.
   title: Designer
+
+navigation:
+ - title: Profile
+   url: /info
+ - title: Projects
+   url: /projects
+ - title: Illustration
+   url: /illos
+
 
 
 # Credits content

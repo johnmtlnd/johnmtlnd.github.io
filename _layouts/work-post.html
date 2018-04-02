@@ -1,23 +1,37 @@
 ---
 layout: default
 ---
-<div class="container">
-  <article class="row">
-    <div class="four columns">
-      <h1 class="post-title">{{ page.title }}</h1>  
+<section>
+  <div class="row">
+    <div class="container">
+      <div class="post-meta twelve columns">
+        <h1 class="post-title">{{ page.title }}</h1>
+        {% assign tags = page.tags %}
+        <ul class="taglist">
+          {% for tag in page.tags %}
+          <li class="tags">{{ tag }}</li>
+          {% endfor %}
+        </ul>
+        <br>
+        <hr>
+      </div>
     </div>
-    <div class="eight columns">
-      <p class="post-subtitle">
-        {{ page.description }}
-      </p>  
-    </div>
-    
-    <!--{% assign tags = page.tags %}
-    <ul class="taglist">
-        {% for tag in page.tags %}
-        <li class="tags">{{ tag }}</li>
-        {% endfor %}
-    </ul>-->
-</article>
+  </div>
+  <div class="row">
+    <div class="container"><br>
 
-{{ content }}
+      <div class="six offset-by-two columns">
+        <h3>Project Description</h3>
+        <p>{{ page.description }}</p>
+      </div>
+      <div class="one-third column">
+        <h3>Team</h3><p>{{ page.team }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+
+<div class="container">
+  {{ content }}
+</div>

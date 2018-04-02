@@ -1,15 +1,29 @@
 @font-face {
-  font-family: 'Questa';
-  font-weight: 200;
+  font-family: 'Lydian';
+  font-weight: 400;
   font-style: normal;
-  src: url('../fonts/Questa/Questa_Sans_Light.otf');
+  src: url('../fonts/lydian/Lydian.ttf');
 }
 
 @font-face {
-  font-family: 'Questa-Bold';
+  font-family: 'Founders-Grotesk';
+  font-weight: 200;
+  font-style: normal;
+  src: url('../fonts/founders/FoundersGrotesk-Light.otf');
+}
+
+@font-face {
+  font-family: 'Founders-Grotesk Bold';
   font-weight: 400;
   font-style: normal;
-  src: url('../fonts/Questa/Questa_Sans_Bold.otf');
+  src: url('../fonts/founders/FoundersGrotesk-Medium.otf');
+}
+
+@font-face {
+  font-family: 'Founders-Grotesk Mono';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/founders/FoundersGroteskMono-Regular.otf');
 }
 
 @font-face {

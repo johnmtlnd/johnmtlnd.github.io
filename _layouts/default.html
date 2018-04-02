@@ -7,12 +7,10 @@
   {% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/normalize.css?v=' | append: site.github.build_revision | relative_url }}">
 
-    <link rel="stylesheet" href="{{ '/assets/css/jquery.fullpage.min.css?v=' | append: site.github.build_revision | relative_url }}">
-
   <link rel="stylesheet" href="{{ '/assets/css/skeleton.css?v=' | append: site.github.build_revision | relative_url }}">
-  
+
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  
+
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
@@ -20,25 +18,25 @@
     <![endif]-->
   </head>
   <body>
-    <div class="wrapper">
       <header>
-        <a href="/"><img class="site-logo" src="/{{ site.cdn_path }}/logo.svg" width="90px" height="auto" alt="site-logo"></a>
-
-        <a href="/"><img class="site-name" src="/{{ site.cdn_path }}/name.svg" width="200px" height="auto" alt="site-name"></a>
-
-        <nav>
-          <!--<ul>
-            {% for link in site.navigation %}
-            {% assign current = nil %}
-            {% if page.url contains link.url %}
-            {% assign current = 'current' %}
-            {% endif %}
-            <li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
-              <a href="{{ link.url }}">{{ link.title }}</a>
-            </li>
-            {% endfor %}
-          </ul>-->
-          <ul>
+        <div class="container">
+          <a href="/">
+            <img class="site-logo" src="/{{ site.cdn_path }}/logo.svg" width="95px" height="auto" alt="site-logo">
+          </a>
+          <nav>
+            <ul>
+              {% for link in site.navigation %}
+              {% assign current = nil %}
+              {% if page.url contains link.url %}
+              {% assign current = 'current' %}
+              {% endif %}
+              <li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+                <a href="{{ link.url }}">{{ link.title }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </nav>
+          <ul class="social">
             {% for network in site.social %}
             <li>
               <a href="{{ network.url }}">
@@ -47,19 +45,20 @@
             </li>
             {% endfor %}
           </ul>
-        </nav>
+        </div>
       </header>
-      
+
       <div class="wrap">
-        {{ content }}
+          {{ content }}
       </div>
       <footer>
-       <a href="mailto:{{ site.author.email }}"><img class="site-hand" src="/{{ site.cdn_path }}/hand.svg" width="40px" height="auto" alt="site-hand"></a>
-       <p>{{ site.credits }}</p>
+        <div class="container">
+          <a href="mailto:{{ site.author.email }}"><img class="site-hand" src="/{{ site.cdn_path }}/hand.svg" width="40px" height="auto" alt="site-hand"></a>
+          <p>{{ site.credits }}</p>
+        </div>
+
      </footer>
-   </div>
    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
-   <script src="{{ '/assets/js/jquery.fullpage.min.js' | relative_url }}"></script>
 
 
    {% if site.google_analytics %}
