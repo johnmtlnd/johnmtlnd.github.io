@@ -113,9 +113,15 @@ hr {
 }
 
 footer {
+<<<<<<< HEAD
   position: relative;
   width: 100%; height: 75px;
   z-index: 0;
+=======
+  position: fixed;
+  width: 95%;
+  z-index: -1;
+>>>>>>> origin/master
   bottom: 25px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
