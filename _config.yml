@@ -38,6 +38,8 @@ navigation:
    url: /projects
  - title: Illustration
    url: /illos
+ - title: Development
+   url: /dev
 
 
 
