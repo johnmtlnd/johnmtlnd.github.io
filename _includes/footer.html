@@ -1,0 +1,30 @@
+<footer class="footer section-padding--half">
+  <div class="footer__container grid">
+    <p>&copy;{{ site.time | date: "%Y" }} {{ site.title }}. Made with Jekyll. Hosted by Github Pages. Code is published under GPL.</p>
+    {% if site.email or site.social %}
+      <ul class="footer__social">
+        {% if site.email %}
+          <li><a class="fa fa-lg fa-envelope-o" href="mailto:{{ site.email }}">&nbsp;</a></li>
+        {% endif %}
+        {% for social in site.social %}
+          <li><a class="fa fa-lg fa-{{ social[0] }}" href="{{ social[1] }}" target="_blank">
+            &nbsp;
+          </a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</footer>
+<script type="text/javascript" src="{{ '/assets/js/jquery.min.js' | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ '/assets/js/app.min.js' | prepend: site.baseurl }}"></script>
+{% if site.instagram_key %}
+  <script type="text/javascript">
+    if ($('body').attr('id') ) {
+      instafetch.init({
+        accessToken: '{{ site.instagram_key }}',
+        numOfPics: 6,
+        caption: {{ site.instagram_caption }}
+      });
+    }
+  </script>
+{% endif %}

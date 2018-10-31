@@ -1,0 +1,32 @@
+<header class="header">
+  <a href="/">
+    <figure class="header__img">
+      <img src="/assets/images/logo.svg" alt="JM Logo"/>
+    </figure>
+  </a>
+  <nav>
+    <ul class="header__list">
+      <li><a data-scroll href="/info">Profile</a></li>
+      <!--<li><a data-scroll href="/projects.html">Projects</a></li>-->
+      <li><a href="/projects/illustration/">Illustration</a></li>
+      <li><a href="/projects/branding/">Branding</a></li>
+
+    </ul>
+  </nav>
+  <ul class="header__list social">
+    {% if site.email or site.social %}
+      <ul class="footer__social">
+        {% if site.email %}
+          <li><a class="fa fa-lg fa-envelope-o" href="mailto:{{ site.email }}"></a></li>
+        {% endif %}
+        {% for social in site.social %}
+          <li>
+            <a href="{{ social[1] }}" target="_blank">
+              <i class="fa fa-lg fa-{{ social[0] }}"></i>
+            </a>
+        </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </ul>
+</header>

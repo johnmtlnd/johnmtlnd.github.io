@@ -1,90 +1,47 @@
 ---
 layout: default
-title: Info
+title: About Me
+description:
+permalink: /info
 ---
-
-
-<div class="container">
-  <section>
-    <div class="row">
-
-      <div class="one-third column">
-        <img src="{{ site.cdn_path }}/headshot.png" alt="#">
-      </div>
-      <div class="offset-by-one six columns">
-        <h1>Howdy, neighbor!</h1>
-        <p class="large">I'm John, a Virginian to the bone, living and working in Richmond, VA. I make every effort to work with the intention of making beautiful design that is <a href="https://www.instagram.com/p/BfFN4yWFqoF/">bold</a> and challenges the status quo. Much of my work is collaborative in small, multi-disciplinary, and fast moving teams. When I'm not <a href="https://www.instagram.com/p/BM4trvKA4-S/">at the desk</a> I like to <a href="https://www.instagram.com/p/BWU7mcXl8n5/">get outside</a>, <a href="https://www.instagram.com/p/62aezapOvq/">drink coffee</a>, and <a href="https://www.instagram.com/p/BeL3Ykzl2XC/">get groovy</a>.</p>
-      </div>
-    </div>
-  </section>
-
-  <hr>
-  <section>
-    <div class="row">
-      <div class="one-third column">
-        <h3>Currently</h3>
-      </div>
-      <div class="offset-by-one six columns">
-        <p class="large" style="line-height: 1.8em;margin-bttom: 10px;">Designer &mdash; <a href="https://www.campfireandco.com">Campfire & Co.</a></p>
+<section >
+    <div class="grid">
+      <div class="about">
+        <img src="{{ site.default_img }}" width="300" alt="" style="margin: 5%; margin-left: 0;">
+        <h1 class="section-header">Hello.</h1>
+        <p class="about__text wow fadeInUp" data-wow-delay="300ms">
+          I wear plain black t-shirts, have fashionable glasses, and wear sandals out of season. I juxtapose my hyper-modern career choice by maintaining an innate interest in the outdoors, living in a studio apartment with no furniture, and spending very little of my free time actually on the computer.</p>
+          <p class="wow fadeInUp" data-wow-delay="500ms">
+            Are you <i>really</i> interested in working together? Then reach out and let's talk about it over a beer or <i>slide</i> into my <a href="instagram.com/johnmtlnd">Instagram</a> DM's because apparently that's professional enough these days.
+          </p>
+          <div class="container-btn">
+            <a class="btn" href="mailto:hello@johnmtlnd.com">
+              <div>
+                <span>Add me on MySpace</span>
+                <span>Add me on MySpace</span>
+              </div>
+            </a>
       </div>
     </div>
-    <div class="row">
-      <div class="one-third column">
-        <h3>Previously</h3>
-      </div>
-      <div class="offset-by-one six columns">
-        <ul>
-          <li>Free Floating Human &mdash; Summer 2017 &mdash; ask me about it!</li>
-          <li>Junior Designer &mdash; Riggs Ward Design</li>
-          <li>Design Intern &mdash; BCWH Architects</li>
-          <li>Shop Assistant &mdash; Bowe Haus Press</li>
-          <li>Student &mdash; VCUarts &mdash; BFA in Design</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+</section>
 
-  <hr>
-  <section>
-    <div class="row">
-      <div class="one-third column">
-        <h3 >Contact</h3>
-      </div>
-      <div class="offset-by-one six columns">
-
-        <h3>Freelance</h3><p>I occasionally take on freelance projects and love to work with other designers on side projects (especially if they're for a good cause). </p>
-    <br />
-        <h3>FOR SERIOUS STUFF  &mdash; <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></h3>
-        &mdash;
-        <p><h3>FOR FUN STUFF  &mdash; <a href="https://www.twitter.com/johnmtlnd">@johnmtlnd</a></h4>
-          <br />
-        </div>
-
-      </div>
-      <div class="row">
-        <div class="one-third column">
-          <h3 >Resume</h3>
-        </div>
-        <div class="offset-by-one six columns">
-          <p><a href="{{ site.cdn_path }}/resume-john-maitland.pdf">[PDF]</a></p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="four columns">
-          <h3>Social</h3>
-        </div>
-        <div class="offset-by-one six columns">
-          <ul class="social" style="float: left;">
-            {% for network in site.social %}
-            <li>
-              <a href="{{ network.url }}">
-                {{ network.title }}
-              </a>
-            </li>
-            {% endfor %}
+<section class=" about section-padding bg-grey">
+  <div class="grid">
+        <div class="container-double">
+          <h4>Currently</h4>
+          <span>Designer &mdash; <a href="https://www.campfireandco.com">Campfire & Co.</a></span>
+          <h4>Previously</h4>
+          <ul style="list-style:none;">
+            <li>Free Floating Human &mdash; Summer 2017 &mdash; ask me about it!</li>
+            <li>Junior Designer &mdash; Riggs Ward Design</li>
+            <li>Design Intern &mdash; BCWH Architects</li>
+            <li>Shop Assistant &mdash; Bowe Haus Press</li>
+            <li>Student &mdash; VCUarts &mdash; BFA in Design</li>
           </ul>
         </div>
+        <div class="grid">
+          <div id="instafetch" class="container-triple"></div>
+        </div>
       </div>
+    </div>
   </section>
-</div>

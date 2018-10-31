@@ -1,0 +1,83 @@
+/**
+ * Body
+ */
+body {
+  min-height: 100vh;
+
+  color: $color-black;
+  background-color: $color-grey;
+}
+div.campfire{
+  postion: relative;
+  display: block;
+  z-index: 999;
+  opacity: .75;
+  text-align: center;
+  margin: -75px 0px 20px 0px;
+  font-size: .8em;
+  font-family: $font-header;
+}
+
+/**
+ * Main
+ */
+main {
+  flex-grow: 1;
+  padding-top: 4em;
+
+  #home & {
+    padding-top: 0;
+  }
+}
+
+/**
+ * Sections
+ */
+section {
+  position: relative;
+}
+
+.section-padding {
+  padding-top: 2em;
+  padding-bottom: 2em;
+
+  @media (min-width: $mq-sm) {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  &--half {
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    @media (min-width: $mq-sm) {
+      padding-top: 1.5em;
+      padding-bottom: 1.5em;
+    }
+  }
+}
+
+.grid {
+  margin-right: 0em;
+  margin-left: 0em;
+
+  &--double {
+    margin-right: 8em;
+    margin-left: 8em;
+
+    @media (min-width: $mq-md) {
+      margin-right: 14em;
+      margin-left: 14em;
+    }
+  }
+}
+
+.section-header {
+  overflow: visible;
+
+  span {
+    @include nth-animation-delay();
+
+    display: inline-block;
+  }
+}
