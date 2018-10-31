@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Space Mono", sans-serif;
+  src: url("css/fonts/space-mono/SpaceMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: "TT Norms", sans-serif;
+  src: url("css/fonts/tt-nro/TTNorms-Regular.otf");
+}
+
 body {
   font-family: $font-body;
   font-weight: 400;
