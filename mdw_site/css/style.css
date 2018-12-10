@@ -1,0 +1,77 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+
+#index-banner{
+  background: url('../assets/heros/index-hero-new-york-michael-walker-design.png');
+  background-size: cover;
+}
+#about-banner{
+  background: url('../assets/heros/img-about-header01-new-york-michael-walker-design-small.png') top center no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+#about-banner:after, #services-banner:after {
+  padding-top: 2%;
+  display: block;
+  content: '';
+}
+
+#social-banner{
+  background: url('../assets/heros/img-home-social-devices-background-combo-00-new-york-michael-walker-design.png') top center no-repeat;
+  background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+}
+#search-engine-banner{
+  background: url('../assets/heros/img-home-search-devices-background-combo-00-new-york-michael-walker-design.png') top center no-repeat;
+  background-size: cover;
+     background-repeat: no-repeat;
+     width: 100%;
+}
+#analytics-banner{
+  background: url('../assets/heros/img-home-analytics-devices-combo-00-new-york-michael-walker-design.png') top center no-repeat;
+  background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+}
+#services-banner{
+  background: url('../assets/heros/img-about-services-offered-00-new-york-michael-walker-design.png') top center no-repeat;
+  background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+}
+
+.cta-footer{
+  background: url('../assets/heros/img-footer-00-new-york-michael-walker-design.png') top center no-repeat;
+  background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+}
+#social-banner:after, #search-engine-banner:after,
+#analytics-banner:after, .cta-footer:after {
+  padding-top: 15%;
+  display: block;
+  content: '';
+}
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+li{
+  line-height: 1.em;
+  padding-bottom: 1rem;
+}
+
+.footer-copyright{
+  text-transform: uppercase;
+  letter-spacing: .025sem;
+  font-size: 1em;
+}
