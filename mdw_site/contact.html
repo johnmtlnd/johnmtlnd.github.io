@@ -47,37 +47,31 @@
 
     </div>
   </div>
-  <div class="section pad">
+  <div class="section pad" style="padding: 100px 0px;">
     <div class="container">
       <div class="row">
-        <form class="col s12 l8 offset-l2">
+        <form id="contactform" class="col s12 l8 offset-l2" method="POST">
           <div class="row">
             <div class="input-field col s6">
-              <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-              <label for="first_name">First Name</label>
+              <input id="first_name" type="text" class="validate" name="name" placeholder="Name">
             </div>
-            <div class="input-field col s6">
-              <input id="last_name" type="text" class="validate">
-              <label for="last_name">Last Name</label>
+            <div class="input-field col s5 offset-l1">
+              <input id="last_name" type="text" class="validate" name="_replyto" placeholder="Email Address">
             </div>
           </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="email" type="email" class="validate">
-              <label for="email">Email</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s12">
-              This is an inline input field:
-              <div class="input-field inline">
-                <input id="email_inline" type="email" class="validate">
-                <label for="email_inline">Email</label>
-                <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+           <input type="hidden" name="_subject" value="Website contact" />
+           <div class="row">
+              <div class="input-field col s12">
+                <textarea rows="10" cols="10" id="textarea" class="materialize-textarea" name="message" palceholder="Your message..."></textarea>
               </div>
             </div>
-          </div>
+           <input type="text" name="_gotcha" style="display:none" />
+           <input type="submit" value="Submit" class="btn-large blue accent-3 waves-effect waves-dark white-text">
         </form>
+        <script>
+           var contactform =  document.getElementById('contactform');
+           contactform.setAttribute('action', '//formspree.io/' + 'walkermd2' + '@' + 'vcu' + '.' + 'edu');
+        </script>
       </div>
     </div>
   </div>
