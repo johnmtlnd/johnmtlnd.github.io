@@ -2116,11 +2116,11 @@
 }
 
 .black {
-  background-color: #000000 !important;
+  background-color: #2F2933 !important;
 }
 
 .black-text {
-  color: #000000 !important;
+  color: #2F2933 !important;
 }
 
 .white {
@@ -3152,7 +3152,8 @@ td, th {
 }
 
 .collection a.collection-item:not(.active):hover {
-  background-color: #ddd;
+  background-color: #1A73E8;
+  color: white;
 }
 
 .collection.with-header .collection-header {
@@ -3426,9 +3427,14 @@ table span.badge {
           font-feature-settings: 'liga';
 }
 
+body{
+  widows: 2;
+  orphans: 2;
+}
+
 .container {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1440px;
   width: 90%;
 }
 
@@ -4339,6 +4345,7 @@ nav .brand-logo {
   display: inline-block;
   font-size: 2.1rem;
   padding: 0;
+  margin-right: 28px;
 }
 nav .brand-logo>img{
   padding: 10px;
@@ -4382,6 +4389,7 @@ nav .brand-logo [class^="mdi-"], nav .brand-logo [class*="mdi-"],
 nav .brand-logo i.material-icons {
   float: left;
   margin-right: 15px;
+  margin-left: 15px;
 }
 
 nav .nav-title {
@@ -4402,16 +4410,28 @@ nav ul li {
 }
 
 nav ul li.active {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #42a5f5;
+}
+
+nav ul li.active a {
+  color: white !important;
+}
+
+nav ul li:hover {
+  background-color: #2196f3;
+  color: white;
+}
+nav ul li a:hover {
+  color: white !important;
 }
 
 nav ul a {
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: #fff;
   display: block;
-  padding: 0 15px;
+  padding: 0 10px;
   cursor: pointer;
 }
 
@@ -4483,14 +4503,14 @@ nav .input-field label.active i {
 
 @media only screen and (min-width: 601px) {
   nav.nav-extended .nav-wrapper {
-    min-height: 64px;
+    min-height: 66px;
   }
   nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
-    height: 64px;
+    height: 66px;
     line-height: 64px;
   }
   .navbar-fixed {
-    height: 64px;
+    height: 66px;
   }
 }
 
@@ -4499,15 +4519,15 @@ a {
 }
 
 html {
-  line-height: 1.5;
+  line-height: 1;
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.87);
 }
 
 @media only screen and (min-width: 0) {
   html {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
@@ -4519,7 +4539,7 @@ html {
 
 @media only screen and (min-width: 1200px) {
   html {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 p{
@@ -4527,7 +4547,7 @@ p{
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5em;
 }
 
@@ -5177,8 +5197,8 @@ small {
   height: 36px;
   line-height: 36px;
   padding: 0 16px;
-  text-transform: uppercase;
-  letter-spacing: .1em;
+  text-transform: none;
+  letter-spacing: 0em;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent;
 }
@@ -5527,7 +5547,8 @@ button.btn-floating {
 .btn-large {
   height: 54px;
   line-height: 54px;
-  font-size: 15px;
+  font-size: 1.25rem;
+  letter-spacing: 0;
   padding: 0 28px;
 }
 

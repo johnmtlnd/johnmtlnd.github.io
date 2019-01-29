@@ -10,22 +10,32 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
+
+  <style>
+    .blue-text{color: #1A73E8 !important;}
+    #download-button{margin-right:18px;}
+  </style>
 </head>
 <body>
   <nav class="white" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">
+    <div class="nav-wrapper container"><a id="logo-container" style="position: relative; float: left;" href="index.html" class="brand-logo">
       <img src="./assets/MDW_Main-logo.png" alt="">
     </a>
-    <ul class="right">
-      <li><a href="http://www.linkedin.com/in/michaeldavidwalker" class="blue-text">
-        <img src="./assets/linkedin.svg" alt="LinkedIn Logo" width="25" style="margin-top: 20px;">
-        </a>
-      </li>
-    </ul>
+
+      <ul class="">
+        <li class="active"><a class="blue-text waves-effect waves-dark" href="index.html">Home</a></li>
+        <li><a class="blue-text waves-effect waves-dark" href="about.html">About</a></li>
+        <li><a class="blue-text waves-effect waves-dark" href="contact.html">Contact</a></li>
+      </ul>
       <ul class="right">
-        <li><a class="black-text" href="index.html">Home</a></li>
-        <li><a class="black-text" href="about.html">About</a></li>
-        <li><a class="black-text" href="https://docs.google.com/forms/d/e/1FAIpQLScv8zCY3JfUlDScjRgx0syektm9l4yw7ELvZbpRyDpGpz-URg/viewform">Contact</a></li>
+        <li><a href="http://www.linkedin.com/in/michaeldavidwalker" style="height: 66px";>
+          <img src="./assets/linkedin.svg" alt="LinkedIn Logo" width="25" style="margin-top: 20px;">
+          </a>
+        </li>
       </ul>
 
       <!--<ul id="nav-mobile" class="sidenav">
@@ -38,15 +48,16 @@
     <div class="container">
       <br><br>
       <div class="row pad">
-        <div class="col white-text s8 l6">
+        <img class="col s12 m4 l4 offset-l1 show-on-small hide-on-med-and-up" src="./assets/about-headshot-michael-walker-design.png"  alt="">
+        <div class="col white-text s12 l6">
           <h1 class="white-text strong" style="text-transform: uppercase; font-weight: 900; line-height: 1em; font-size: 600%;">Michael Walker</h1>
           <h4 class="white-text">Digital Product Design <br />New York, NY</h4>
           <br><br>
-          <a href="/about.html" id="download-button" class="hide-on-med-and-down btn-large waves-effect waves-dark white black-text">About</a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScv8zCY3JfUlDScjRgx0syektm9l4yw7ELvZbpRyDpGpz-URg/viewform" id="download-button" class="btn-large waves-effect waves-light blue accent-3">Contact</a>
+          <a href="about.html" id="download-button" class="hide-on-med-and-down btn-large waves-effect waves-dark white black-text hoverable">About</a>
+          <a href="contact.html" id="download-button" class="btn-large waves-effect waves-dark hoverable blue">Contact</a>
 
         </div>
-        <img class="col s12 m4 l4 offset-l1" src="./assets/about-headshot-michael-walker-design.png"  alt="">
+        <img class="col s12 m4 l4 offset-l1 hide-on-med-and-down show-on-med-and-up" src="./assets/about-headshot-michael-walker-design.png"  alt="">
       </div>
       <br><br>
 
@@ -57,12 +68,12 @@
   <div class="container">
     <br><br />
     <div class="row">
-      <h2 class="header light white-text strong">Social App</h2>
-      <h5 class="header light white-text strong col s6 m7 l6">This social app helps 22,000+ users share and access business information on the go.</h5>
+      <h2 class="header white-text strong">Social App</h2>
+      <h5 class="header light white-text strong col s6 m7 l5">This social app helps 22,000+ users share and access business information on the go.</h5>
     </div>
     <div class="row">
       <br />
-      <a href="projects/social-app.html" class="btn-large waves-effect waves-light blue accent-3">See the Work</a>
+      <a href="projects/social-app.html" class="btn-large waves-effect waves-dark white blue-text hoverable">See the Work</a>
     </div>
   </div>
 </div>
@@ -70,12 +81,12 @@
   <div class="container">
     <br><br />
     <div class="row">
-      <h2 class="header light white-text">Search Engine</h2>
-      <h5 class="header light white-text col s6 m6 l5">A custom search engine that connects users with over 7 million results.</h5>
+      <h2 class="header white-text">Search Engine</h2>
+      <h5 class="header light white-text col s5 m6 l5">A custom search engine that connects users with over 7 million results.</h5>
     </div>
     <div class="row">
       <br />
-      <a href="projects/search-engine.html" class="btn-large waves-effect waves-light blue accent-3">See the Work</a>
+      <a href="projects/search-engine.html" class="btn-large waves-effect waves-dark white blue-text hoverable">See the Work</a>
     </div>
   </div>
 </div>
@@ -83,12 +94,12 @@
   <div class="container">
     <br><br />
     <div class="row">
-      <h2 class="header light white-text">Analytics Platform</h2>
+      <h2 class="header white-text">Analytics Platform</h2>
       <h5 class="header light white-text col s6 m6 l5">UI that makes a complex tool simple to use on both desktop and mobile experiences.</h5>
     </div>
     <div class="row">
       <br />
-      <a href="projects/analytics-platform.html" class="btn-large waves-effect waves-light blue accent-3">See the Work</a>
+      <a href="projects/analytics-platform.html" class="btn-large waves-effect waves-dark white blue-text hoverable">See the Work</a>
     </div>
     <br><br />
   </div>
@@ -101,7 +112,7 @@
         <div class="row">
           <div class="col s8">
             <h3 class="header">What Others Say</h3>
-            <h6>“Michael is not only a talented designer with an excellent eye for spacing and typography, he’s also committed with great spirit! I consider myself fortunate to have him as a co-worker, and fellow designer.”</h6>
+            <p>“Michael is not only a talented designer with an excellent eye for spacing and typography, he’s also committed with great spirit! I consider myself fortunate to have him as a co-worker, and fellow designer.”</p>
           </div>
         </div>
         <div class="row valign-wrapper">
@@ -115,11 +126,11 @@
             </div>
           </div>
           <br>
-          <a href="#" class="btn-large waves-effect waves dark blue-text white"><i class="tiny material-icons">launch</i> Read more on LinkedIn</a>
+          <a href="#" class="btn-large waves-effect waves dark blue-text white hoverable"><i class="tiny material-icons" style="vertical-align: middle; margin-right: 15px;">launch</i>Read more on LinkedIn</a>
+          <br><br><br><br>
       </div>
 
-
-      <div class="col s12 m5 l6 offset-1">
+      <div class="col s12 m5 l6 push-m1">
         <h3 class="header">About Michael</h3>
         <ul>
           <li>6+ years of design experience</li>
@@ -130,7 +141,7 @@
           <li>Fluent in English, reads basic Spanish & French</li>
           <li>Passionate about digital product design</li>
         </ul>
-        <a href="#" class="btn-large waves-effect waves-dark blue-text white">Read More</a>
+        <a href="#" class="btn-large waves-effect waves-dark blue-text white hoverable">Read More</a>
       </div>
     </div>
   </div>
@@ -139,10 +150,10 @@
     <div class="cta-footer">
       <div class="container">
         <div class="row">
-          <div class="col s12 m4 l6">
+          <div class="col s12 m12 l6">
             <h2>Let's Get to Work</h2>
             <p>I’d love to hear from you. Click below to start a project or get a quote. Or, if you want to talk about the latest in design, reach out on LinkedIn</p>
-            <a href="#" class="btn-large blue accent-3 waves-effect waves-dark white-text">Contact</a>
+            <a href="#" class="btn-large waves-effect waves-dark blue-text white hoverable">Contact</a>
           </div>
         </div>
       </div>
@@ -150,14 +161,14 @@
     <div class="footer-copyright white-text black">
       <div class="container">
         <div class="row">
-          <div class="col s4 m4 l4">
+          <div class="col s12 m4 l4">
             <p><i class="tiny material-icons">copyright</i> Copyright Michael Walker 2018</p>
           </div>
-          <div class="col s6 m6 l6">
+          <div class="col s8 m6 l6">
             <p>UI Design by Michael Walker, Site built by John Maitland</p>
           </div>
-          <div class="col s2 m2 l2 right-align">
-            <img src="./assets/apple_rainbow_flag.png" width="50" alt="apple emoji rainbow flag icon">
+          <div class="col s4 m2 l2 right-align">
+            <img style="margin-top: 15px;" src="./assets/apple_rainbow_flag.png" width="36" alt="apple emoji rainbow flag icon">
           </div>
         </div>
       </div>
@@ -166,9 +177,7 @@
 
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <!--<script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+
 
   </body>
 </html>

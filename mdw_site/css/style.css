@@ -18,27 +18,23 @@
 }
 
 #about-banner:after, #services-banner:after {
-  padding-top: 2%;
+  padding-top: 0%;
   display: block;
   content: '';
 }
 
 #social-banner{
-  background: url('../assets/heros/img-home-social-devices-background-combo-00-new-york-michael-walker-design.png') top center no-repeat;
+  background: url('../assets/heros/img-home-social-devices-background-combo-01-new-york-michael-walker-design.png') bottom center no-repeat;
   background-size: cover;
-   background-repeat: no-repeat;
-   width: 100%;
 }
 #search-engine-banner{
-  background: url('../assets/heros/img-home-search-devices-background-combo-00-new-york-michael-walker-design.png') top center no-repeat;
+  background: url('../assets/heros/img-home-search-devices-background-combo-01-new-york-michael-walker-design.png') bottom center no-repeat;
   background-size: cover;
-     background-repeat: no-repeat;
      width: 100%;
 }
 #analytics-banner{
-  background: url('../assets/heros/img-home-analytics-devices-combo-00-new-york-michael-walker-design.png') top center no-repeat;
+  background: url('../assets/heros/img-home-analytics-devices-combo-01-new-york-michael-walker-design.png') bottom center no-repeat;
   background-size: cover;
-   background-repeat: no-repeat;
    width: 100%;
 }
 #services-banner{
@@ -55,13 +51,23 @@
    width: 100%;
 }
 #social-banner:after, #search-engine-banner:after,
-#analytics-banner:after, .cta-footer:after {
-  padding-top: 15%;
+#analytics-banner:after {
+  padding-bottom: 15%;
   display: block;
   content: '';
 }
-ul {
+
+.cta-footer:after{
+  padding-bottom: 10%;
+  display: block;
+  content: '';
+}
+
+nav ul{
   list-style: none;
+}
+ul {
+  list-style: ;
   padding-left: 0px;
 }
 
