@@ -26,16 +26,19 @@
 #social-banner{
   background: url('../assets/heros/img-home-social-devices-background-combo-01-new-york-michael-walker-design.png') bottom center no-repeat;
   background-size: cover;
+  padding: 5% 0; 
 }
 #search-engine-banner{
   background: url('../assets/heros/img-home-search-devices-background-combo-01-new-york-michael-walker-design.png') bottom center no-repeat;
   background-size: cover;
      width: 100%;
+     padding: 5% 0;
 }
 #analytics-banner{
   background: url('../assets/heros/img-home-analytics-devices-combo-01-new-york-michael-walker-design.png') bottom center no-repeat;
   background-size: cover;
    width: 100%;
+   padding: 5% 0;
 }
 #services-banner{
   background: url('../assets/heros/img-about-services-offered-00-new-york-michael-walker-design.png') top center no-repeat;
@@ -50,12 +53,13 @@
    background-repeat: no-repeat;
    width: 100%;
 }
-#social-banner:after, #search-engine-banner:after,
+
+/*#social-banner:after, #search-engine-banner:after,
 #analytics-banner:after {
-  padding-bottom: 15%;
+  padding-bottom: 5%;
   display: block;
   content: '';
-}
+}*/
 
 .cta-footer:after{
   padding-bottom: 10%;

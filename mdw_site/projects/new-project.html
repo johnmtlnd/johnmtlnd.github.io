@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-  <title>New Project - Michael Walker Design</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Home | Michael Walker Design</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="../js/materialize.min.js"></script>
+  <script src="../js/init.js"></script>
+
+  <style>
+    .blue-text{color: #1A73E8 !important;}
+    #download-button{margin-right:18px;}
+  </style>
 </head>
 
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" style="position: relative; float: left;" href="index.html" class="brand-logo">
-      <img src="./assets/MDW_Main-logo.png" alt="">
+      <img src="../assets/MDW_Main-logo.png" alt="">
     </a>
 
       <ul class="">
-        <li><a class="blue-text waves-effect waves-dark" href="index.html">Home</a></li>
-        <li><a class="blue-text waves-effect waves-dark" href="about.html">About</a></li>
-        <li><a class="blue-text waves-effect waves-dark" href="contact.html">Contact</a></li>
+        <li><a class="blue-text waves-effect waves-dark" href="../index.html">Home</a></li>
+        <li><a class="blue-text waves-effect waves-dark" href="../about.html">About</a></li>
+        <li><a class="blue-text waves-effect waves-dark" href="../contact.html">Contact</a></li>
       </ul>
       <ul class="right">
         <li><a href="http://www.linkedin.com/in/michaeldavidwalker" style="height: 66px";>
-          <img src="./assets/linkedin.svg" alt="LinkedIn Logo" width="25" style="margin-top: 20px;">
+          <img src="../assets/linkedin.svg" alt="LinkedIn Logo" width="25" style="margin-top: 20px;">
           </a>
         </li>
       </ul>
@@ -45,7 +53,7 @@
         <p class="flow-text large white-text col s12 l6">This social app helps 22,000+ users share and access business information on the go.</p>
       </div>
       <div class="row">
-        <a href="/about/" class="btn-large waves-effect waves-dark white blue-text"><i class="tiny material-icons">launch</i> Launch the Prototype</a>
+        <a href="/about/" class="btn-large waves-effect waves-dark white blue-text"><i class="tiny material-icons" style="vertical-align: middle; margin-right: 15px;">launch</i> Launch the Prototype</a>
       </div>
       <br><br>
 
@@ -199,10 +207,10 @@
     <div class="cta-footer">
       <div class="container">
         <div class="row">
-          <div class="col s12 m4 l6">
+          <div class="col s12 m12 l6">
             <h2>Let's Get to Work</h2>
             <p>I’d love to hear from you. Click below to start a project or get a quote. Or, if you want to talk about the latest in design, reach out on LinkedIn</p>
-            <a href="#" class="btn-large blue accent-3 waves-effect waves-dark white-text">Contact</a>
+            <a href="#" class="btn-large waves-effect waves-dark blue-text white hoverable">Contact</a>
           </div>
         </div>
       </div>
@@ -210,14 +218,14 @@
     <div class="footer-copyright white-text black">
       <div class="container">
         <div class="row">
-          <div class="col s4 m4 l4">
+          <div class="col s12 m4 l4">
             <p><i class="tiny material-icons">copyright</i> Copyright Michael Walker 2018</p>
           </div>
-          <div class="col s6 m6 l6">
+          <div class="col s8 m6 l6">
             <p>UI Design by Michael Walker, Site built by John Maitland</p>
           </div>
-          <div class="col s2 m2 l2 right-align">
-            <img src="../assets/apple_rainbow_flag.png" width="50" alt="apple emoji rainbow flag icon">
+          <div class="col s4 m2 l2 right-align">
+            <img style="margin-top: 15px;" src="../assets/apple_rainbow_flag.png" width="36" alt="apple emoji rainbow flag icon">
           </div>
         </div>
       </div>

@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-  <title>Home - Michael Walker Design</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Home | Michael Walker Design</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="./css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  <link href="./css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="./js/materialize.min.js"></script>
+  <script src="./js/init.js"></script>
+
+  <style>
+    .blue-text{color: #1A73E8 !important;}
+    #download-button{margin-right:18px;}
+  </style>
 </head>
 
 <body>
@@ -39,22 +47,17 @@
   </nav>
   <div class="section" id="about-banner">
     <div class="container">
-      <br><br>
-      <div class="row">
-        <img src="./assets/about-headshot-michael-walker-design.png" class="col s6 l4 responsive-img" alt="">
-        <h1 class="white-text col s12 l5 offset-l1">About Michael</h1>
-        <h4 class="white-text col s12 l5 offset-l1">Michael has a background in digital product design and offers professional UI/UX design services.</h4>
+      <div class="row pad">
+        <img src="./assets/about-headshot-michael-walker-design.png" class="col s8 offset-s2 l4 responsive-img" alt="">
+        <h2 class="white-text col s10 offset-s1 l7 offset-l1">About Michael</h2>
+        <h5 class="white-text col s10 offset-s1 l7 offset-l1">Michael has a background in digital product design and offers professional UI/UX design services.</h5>
       </div>
-      <div class="row">
-              </div>
-      <br><br>
-
     </div>
   </div>
   <div class="section pad" style="padding: 100px 0px;">
     <div class="container">
       <div class="row">
-        <form id="contactform" class="col s12 l8 offset-l2" method="POST">
+        <form id="contactform" class="col s10 offset-s1 l8 offset-l2" method="POST">
           <div class="row">
             <div class="input-field col s6">
               <input id="first_name" type="text" class="validate" name="name" placeholder="Name">
@@ -70,7 +73,7 @@
               </div>
             </div>
            <input type="text" name="_gotcha" style="display:none" />
-           <input type="submit" value="Submit" class="btn-large blue accent-3 waves-effect waves-dark white-text">
+           <input type="submit" value="Submit" class="btn-large waves-effect waves-dark blue-text white hoverable">
         </form>
         <script>
            var contactform =  document.getElementById('contactform');
@@ -87,10 +90,9 @@
     <div class="cta-footer">
       <div class="container">
         <div class="row">
-          <div class="col s12 m4 l6">
+          <div class="col s12 m7 offset-m1 l6">
             <h2>Let's Get to Work</h2>
-            <p>I’d love to hear from you. Click below to start a project or get a quote. Or, if you want to talk about the latest in design, reach out on LinkedIn</p>
-            <a href="#" class="btn-large blue accent-3 waves-effect waves-dark white-text">Contact</a>
+            <p>I’d love to hear from you. Click below to start a project or get a quote. Or, if you want to talk about the latest in design, reach out on LinkedIn.</p>
           </div>
         </div>
       </div>
@@ -98,25 +100,18 @@
     <div class="footer-copyright white-text black">
       <div class="container">
         <div class="row">
-          <div class="col s4 m4 l4">
+          <div class="col s12 m6 m4 l4">
             <p><i class="tiny material-icons">copyright</i> Copyright Michael Walker 2018</p>
           </div>
-          <div class="col s6 m6 l6">
+          <div class="col s8 m4 l6">
             <p>UI Design by Michael Walker, Site built by John Maitland</p>
           </div>
-          <div class="col s2 m2 l2 right-align">
-            <img src="./assets/apple_rainbow_flag.png" width="50" alt="apple emoji rainbow flag icon">
+          <div class="col s4 m2 l2 right-align">
+            <img style="margin-top: 15px;" src="./assets/apple_rainbow_flag.png" width="36" alt="apple emoji rainbow flag icon">
           </div>
         </div>
       </div>
     </div>
   </footer>
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <!--<script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-
   </body>
-</html>
+  </html>
