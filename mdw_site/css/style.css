@@ -6,6 +6,30 @@
  * Made By MaterializeCSS.com
  */
 
+#logo{
+  height: 66px;
+  content: url('../assets/MDW_Main-logo.png');
+}
+
+#logo:hover{
+  height: 66px;
+  content: url('../assets/MDW_Main-logo-white.png');
+}
+
+#linkedin{
+  width: 45px;
+  content: url('../assets/linkedin.png');
+}
+
+#linkedin:hover{
+  width: 45px; height: 66px;
+  content: url('../assets/linkedin-white.png');
+}
+
+a#logo-container:hover{
+  background-color: #42a5f5;
+  height: 66px;
+}
 
 #index-banner{
   background: url('../assets/heros/index-hero-new-york-michael-walker-design.png');
@@ -14,6 +38,11 @@
 #about-banner{
   background: url('../assets/heros/img-about-header01-new-york-michael-walker-design-small.png') top center no-repeat;
   background-size: cover;
+  width: 100%;
+}
+#contact-banner{
+  background: white;
+  color: black;
   width: 100%;
 }
 
@@ -26,7 +55,7 @@
 #social-banner{
   background: url('../assets/heros/img-home-social-devices-background-combo-01-new-york-michael-walker-design.png') bottom center no-repeat;
   background-size: cover;
-  padding: 5% 0; 
+  padding: 5% 0;
 }
 #search-engine-banner{
   background: url('../assets/heros/img-home-search-devices-background-combo-01-new-york-michael-walker-design.png') bottom center no-repeat;
@@ -76,8 +105,12 @@ ul {
 }
 
 li{
-  line-height: 1.em;
+  line-height: 1.5rem;
   padding-bottom: 1rem;
+}
+
+nav ul li{
+  line-height: 64px !important;
 }
 
 .footer-copyright{

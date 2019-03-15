@@ -3,7 +3,8 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Home | Michael Walker Design</title>
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <title>About | Michael Walker Design</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -22,29 +23,34 @@
 </head>
 
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" style="position: relative; float: left;" href="index.html" class="brand-logo">
-      <img src="./assets/MDW_Main-logo.png" alt="">
-    </a>
+  <div class="navbar-fixed">
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <ul>
+          <li id="logo" style="margin-right: 28px;">
+            <a href="index.html" class="brand-logo">
+            </a>
+          </li>
+        </ul>
+        <ul class="">
+          <li><a class="blue-text waves-effect waves-dark" href="index.html">Home</a></li>
+          <li class="active"><a class="blue-text waves-effect waves-dark" href="about.html">About</a></li>
+          <li><a class="blue-text waves-effect waves-dark" href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="right">
+          <li id="linkedin">
+            <a href="http://www.linkedin.com/in/michaeldavidwalker" style="height: 66px" ;>linkedin</a>
+          </li>
+        </ul>
 
-      <ul class="">
-        <li><a class="blue-text waves-effect waves-dark" href="index.html">Home</a></li>
-        <li class="active"><a class="blue-text waves-effect waves-dark" href="about.html">About</a></li>
-        <li><a class="blue-text waves-effect waves-dark" href="contact.html">Contact</a></li>
-      </ul>
-      <ul class="right">
-        <li><a href="http://www.linkedin.com/in/michaeldavidwalker" style="height: 66px";>
-          <img src="./assets/linkedin.svg" alt="LinkedIn Logo" width="25" style="margin-top: 20px;">
-          </a>
-        </li>
-      </ul>
+        <!--<ul id="nav-mobile" class="sidenav">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>-->
+      </div>
+    </nav>
+  </div>
 
-      <!--<ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>-->
-    </div>
-  </nav>
   <div class="section" id="about-banner">
     <div class="container">
       <div class="row pad">
@@ -113,7 +119,6 @@
                 </div>
               </div>
           </div>
-          <br><br />
           <div class="col s10 offset-s1 l5 offset-l1">
             <h6>“I found Michael to be insightful, organized and dedicated to putting out a quality product… I have watched him skillfully take on new projects and initiatives with a keen ability to manage multiple clients. I’ve also been impressed with watching him not just gather requirements from clients, but also use his knowledge in visual design to provide the customer with alternative options that improve upon the original request. I’m looking forward to working with Michael on more projects.”</h6><br>
             <div class="row valign-wrapper">
@@ -134,7 +139,7 @@
       <div class="cta-footer">
         <div class="container">
           <div class="row">
-            <div class="col s12 m7 offset-m1 l6">
+            <div class="col s12 m8 offset-m1 l6">
               <h2>Let's Get to Work</h2>
               <p>I’d love to hear from you. Click below to start a project or get a quote. Or, if you want to talk about the latest in design, reach out on LinkedIn.</p>
               <a href="contact.html" class="btn-large waves-effect waves-dark blue-text white hoverable">Contact</a>

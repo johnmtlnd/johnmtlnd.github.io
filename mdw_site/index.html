@@ -4,6 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
   <title>Home | Michael Walker Design</title>
 
   <!-- CSS  -->
@@ -28,36 +29,41 @@
 </head>
 
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" style="position: relative; float: left;" href="index.html" class="brand-logo">
-        <img src="./assets/MDW_Main-logo.png" alt="">
-      </a>
+  <div class="navbar-fixed">
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <ul>
+          <li id="logo" style="margin-right: 28px;">
+            <a href="index.html" class="brand-logo">
+            </a>
+          </li>
+        </ul>
+        <ul class="">
+          <li class="active"><a class="blue-text waves-effect waves-dark" href="index.html">Home</a></li>
+          <li><a class="blue-text waves-effect waves-dark" href="about.html">About</a></li>
+          <li><a class="blue-text waves-effect waves-dark" href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="right">
+          <li id="linkedin">
+            <a href="http://www.linkedin.com/in/michaeldavidwalker" style="height: 66px" ;>linkedin</a>
+          </li>
+        </ul>
 
-      <ul class="">
-        <li class="active"><a class="blue-text waves-effect waves-dark" href="index.html">Home</a></li>
-        <li><a class="blue-text waves-effect waves-dark" href="about.html">About</a></li>
-        <li><a class="blue-text waves-effect waves-dark" href="contact.html">Contact</a></li>
-      </ul>
-      <ul class="right">
-        <li><a href="http://www.linkedin.com/in/michaeldavidwalker" style="height: 66px" ;>
-            <img src="./assets/linkedin.svg" alt="LinkedIn Logo" width="25" style="margin-top: 20px;">
-          </a>
-        </li>
-      </ul>
+        <!--<ul id="nav-mobile" class="sidenav">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>-->
+      </div>
+    </nav>
+  </div>
 
-      <!--<ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>-->
-    </div>
-  </nav>
   <div class="section no-pad" id="index-banner">
     <div class="container">
       <br><br>
       <div class="row pad">
         <img class="col s8 offset-s2 m4 l4 offset-l1 show-on-small hide-on-med-and-up" src="./assets/about-headshot-michael-walker-design.png" alt="">
         <div class="col white-text s12 l6">
-          <h1 class="white-text strong" style="text-transform: uppercase; font-weight: 900; line-height: 1em; font-size: 600%;">Michael Walker</h1>
+          <h1 class="white-text strong" style="text-transform: uppercase; font-weight: 900; line-height: 1em; font-size: 600%; letter-spacing: .05em;">Michael Walker</h1>
           <h4 class="white-text">Digital Product Design <br />New York, NY</h4>
           <br><br>
           <a href="about.html" id="download-button" class="hide-on-sm btn-large waves-effect waves-dark white black-text hoverable">About</a>
@@ -108,10 +114,10 @@
   <div class="section">
     <div class="container">
       <div class="row">
+        <h3 class="header">What Others Say</h3>
         <div class="col s12 m6 l6 offset-s1">
           <div class="row">
             <div class="col s8">
-              <h3 class="header">What Others Say</h3>
               <p>“Michael is not only a talented designer with an excellent eye for spacing and typography, he’s also committed with great spirit! I consider myself fortunate to have him as a co-worker, and fellow designer.”</p>
             </div>
           </div>
@@ -127,21 +133,27 @@
           </div>
           <br>
           <a href="#" class="btn-large waves-effect waves dark blue-text white hoverable"><i class="tiny material-icons" style="vertical-align: middle; margin-right: 15px;">launch</i>Read more on LinkedIn</a>
-          <br><br><br><br>
         </div>
 
-        <div class="col s12 m5 l6 push-m1">
-          <h3 class="header">About Michael</h3>
-          <ul>
-            <li>6+ years of design experience</li>
-            <li>Studied UX with the Nielsen Norman Group</li>
-            <li>Awarded for UX and Content Management</li>
-            <li>Studied design in the U.S., Netherlands, Qatar & Portugal</li>
-            <li>B.F.A. in Graphic Design from Virginia Commonwealth Univeristy</li>
-            <li>Fluent in English, reads basic Spanish & French</li>
-            <li>Passionate about digital product design</li>
-          </ul>
-          <a href="#" class="btn-large waves-effect waves-dark blue-text white hoverable">Read More</a>
+        <div class="col s12 m6 l6 offset-s1">
+          <div class="row">
+            <div class="col s8">
+              <p>“Michael’s focus, passion, inspiring leadership and can-do attitude [make him] a pleasure to work with and an incredible asset to any team he is a part of!”</p>
+            </div>
+          </div>
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="./assets/team-chantel.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+            </div>
+            <div class="col s10 offset-s1">
+              <span class="black-text">
+                <p><b>Chantel Catapano</b><br />Co-Chair, Mercer Cares</p>
+              </span>
+            </div>
+          </div>
+          <br>
+          <a href="#" class="btn-large waves-effect waves dark blue-text white hoverable"><i class="tiny material-icons" style="vertical-align: middle; margin-right: 15px;">launch</i>Read more on LinkedIn</a>
+          <br><br><br><br>
         </div>
       </div>
     </div>
@@ -150,7 +162,7 @@
     <div class="cta-footer">
       <div class="container">
         <div class="row">
-          <div class="col s12 m12 l6">
+          <div class="col s12 m8 l6">
             <h2>Let's Get to Work</h2>
             <p>I’d love to hear from you. Click below to start a project or get a quote. Or, if you want to talk about the latest in design, reach out on LinkedIn</p>
             <a href="#" class="btn-large waves-effect waves-dark blue-text white hoverable">Contact</a>
@@ -161,10 +173,10 @@
     <div class="footer-copyright white-text black">
       <div class="container">
         <div class="row">
-          <div class="col s12 m4 l4">
+          <div class="col s12 m6 m4 l4">
             <p><i class="tiny material-icons">copyright</i> Copyright Michael Walker 2018</p>
           </div>
-          <div class="col s8 m6 l6">
+          <div class="col s8 m4 l6">
             <p>UI Design by Michael Walker, Site built by John Maitland</p>
           </div>
           <div class="col s4 m2 l2 right-align">

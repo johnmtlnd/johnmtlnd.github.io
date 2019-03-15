@@ -3,7 +3,8 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Home | Michael Walker Design</title>
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+  <title>Social App | Michael Walker Design</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -22,29 +23,34 @@
 </head>
 
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" style="position: relative; float: left;" href="index.html" class="brand-logo">
-      <img src="../assets/MDW_Main-logo.png" alt="">
-    </a>
+  <div class="navbar-fixed">
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <ul>
+          <li id="logo" style="margin-right: 28px;">
+            <a href="index.html" class="brand-logo">
+            </a>
+          </li>
+        </ul>
+        <ul class="">
+          <li><a class="blue-text waves-effect waves-dark" href="../index.html">Home</a></li>
+          <li><a class="blue-text waves-effect waves-dark" href="../about.html">About</a></li>
+          <li><a class="blue-text waves-effect waves-dark" href="../contact.html">Contact</a></li>
+        </ul>
+        <ul class="right">
+          <li id="linkedin">
+            <a href="http://www.linkedin.com/in/michaeldavidwalker" style="height: 66px" ;>linkedin</a>
+          </li>
+        </ul>
 
-      <ul class="">
-        <li><a class="blue-text waves-effect waves-dark" href="../index.html">Home</a></li>
-        <li><a class="blue-text waves-effect waves-dark" href="../about.html">About</a></li>
-        <li><a class="blue-text waves-effect waves-dark" href="../contact.html">Contact</a></li>
-      </ul>
-      <ul class="right">
-        <li><a href="http://www.linkedin.com/in/michaeldavidwalker" style="height: 66px";>
-          <img src="../assets/linkedin.svg" alt="LinkedIn Logo" width="25" style="margin-top: 20px;">
-          </a>
-        </li>
-      </ul>
+        <!--<ul id="nav-mobile" class="sidenav">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>-->
+      </div>
+    </nav>
+  </div>
 
-      <!--<ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>-->
-    </div>
-  </nav>
   <div class="section no-pad" id="social-banner">
     <div class="container">
       <div class="row">
@@ -122,8 +128,8 @@
   <div class="section grey lighten-4">
     <div class="container">
       <div class="row">
-        <h3 class="col s12 m10 offset-m1 l4">Wireframe Examples</h3>
-        <p class="col s12 m10 offset-m1 l7 offset-l1 flow-text">Content-aware wireframes show how social features from several desktop sites could be joined in a unified mobile experience.</p>
+        <h3 class="col s12 m10 offset-m1 l10">Wireframe Examples</h3>
+        <p class="col s12 m10 offset-m1 l6">Content-aware wireframes show how social features from several desktop sites could be joined in a unified mobile experience.</p>
       </div>
       <br>
       <div class="row pad">
@@ -137,15 +143,15 @@
           <img class="responsive-img"" src="../assets/social-app/img-social-wireframe-3-01-new-york-michael-walker-design.png" alt="img-social-wireframe-3-01-new-york-michael-walker-design" />
         </div>
         <br />
-        <p class="center-align col s12 m10 offset-m1 l8 offset-l2">Wireframes were designed by the team web platform manager, Mike Moore. I did a usability audit of the wireframes and used them to design mid-fidelity mockups. Shown left to right: a social feed, a team site, a profile page</p>
+        <p class="center-align col s12 m10 offset-m1 l8 offset-l2 grey-text"><i>Wireframes were designed by the team web platform manager, Mike Moore. I did a usability audit of the wireframes and used them to design mid-fidelity mockups. Shown left to right: a social feed, a team site, a profile page</i></p>
       </div>
     </div>
   </div>
   <div class="section">
     <div class="container">
       <div class="row">
-        <h3 class="col s12 m10 offset-m1 l6">Mid-fidelity Mockup Examples</h3>
-        <p class="col s12 m10 offset-m1 l6 flow-text">Content-aware wireframes show how social features from several desktop sites could be joined in a unified mobile experience.</p>
+        <h3 class="col s12 m10 offset-m1 l10">Mid-fidelity Mockup Examples</h3>
+        <p class="col s12 m10 offset-m1 l6">Content-aware wireframes show how social features from several desktop sites could be joined in a unified mobile experience.</p>
       </div>
       <div class="row pad">
         <div class="col s12 m4 l3">
@@ -157,7 +163,7 @@
         <div class="col s12 m4 l3 offset-l1">
           <img class="responsive-img" src="../assets/social-app/img-social-mid-fidelity-3-01-new-york-michael-walker-design.png" alt="img-social-mid-fidelity-3-01-new-york-michael-walker-design">
         </div>
-        <p class="center-align col s12 m10 offset-m1 l8 offset-l2">Wireframes were designed by the team web platform manager, Mike Moore. I did a usability audit of the wireframes and used them to design mid-fidelity mockups. Shown left to right: a social feed, a team site, a profile page</p>
+        <p class="center-align col s12 m10 offset-m1 l8 offset-l2 grey-text"><i>Wireframes were designed by the team web platform manager, Mike Moore. I did a usability audit of the wireframes and used them to design mid-fidelity mockups. Shown left to right: a social feed, a team site, a profile page</i></p>
       </div>
     </div>
   </div>
@@ -165,9 +171,11 @@
     <div class="container">
       <div class="divider"></div>
       <div class="row pad">
-        <h3 class="col s12 m10 offset-m1 l6">Feedback & Testing</h3>
-        <p class="col s12 m10 offset-m1 l6">I collaborated with the platform manager to evaluate and implement app improvements. The finalized mid-fidelity mock-ups were used to launch a beta version of the social app. Users were encouraged to download the app and provide feedback. I conducted guerilla testing and informal interviews with users after meetings and at water cooler sessions. </p>
+        <h3 class="col s12 m10 offset-m1 l10">Feedback & Testing</h3>
+        <p class="col s12 m10 offset-m1 l8">I collaborated with the platform manager to evaluate and implement app improvements. The finalized mid-fidelity mock-ups were used to launch a beta version of the social app. Users were encouraged to download the app and provide feedback. I conducted guerilla testing and informal interviews with users after meetings and at water cooler sessions. </p>
         <br />
+      </div>
+      <div class="row">
         <div class="col s12 m4 l3">
           <img src="../assets/social-app/img-social-feedback-1-01-new-york-michael-walker-design.png" alt="img-social-feedback-1-01-new-york-michael-walker-design" class="responsive-img" />
         </div>
@@ -177,18 +185,19 @@
         <div class="col s12 m4 l3 offset-l1">
           <img src="../assets/social-app/img-social-feedback-3-01-new-york-michael-walker-design.png" alt="img-social-feedback-1-01-new-york-michael-walker-design" class="responsive-img" />
         </div>
-        <p class="center-align col s12 m10 offset-m1 l8 offset-l2">I worked with our platform manager to critique and refine the design. We tracked comments and exchanged ideas in an online tool called InVision.</p>
+        <p class="center-align col s12 m10 offset-m1 l8 offset-l2 grey-text"><i>I worked with our platform manager to critique and refine the design. We tracked comments and exchanged ideas in an online tool called InVision.</i></p>
       </div>
     </div>
   </div>
   <div class="section">
     <div class="container">
       <div class="divider"></div>
-      <div class="row pad">
-        <h3 class="col s12 m5 l6">Final Designs <br />
-          <a class="btn-large blue accent-3 waves-effect waves-dark white-text hoverable" href="https://mercer.invisionapp.com/share/TWIHYN2N8Q7#/screens/277159664_Landing"><i class="tiny material-icons" style="vertical-align: middle; margin-right: 15px;">launch</i> Launch Prototype</a></h3>
-        <p class="col s12 m6 offset-m1 l6">Feedback was integrated into final designs that follow both Material Design and company brand standards. The end result is a social app that unifies disparate platforms to increase colleague productivity. </p>
+      <div class="row">
+        <h3 class="col s12 m5 l10">Final Designs</h3>
+        <p class="col s12 m6 offset-m1 l6">Feedback was integrated into final designs that follow both Material Design and company brand standards. The end result is a social app that unifies disparate platforms to increase colleague productivity.</p>
       </div>
+      <a class="btn-large blue accent-3 waves-effect waves-dark white-text hoverable" href="https://mercer.invisionapp.com/share/TWIHYN2N8Q7#/screens/277159664_Landing"><i class="tiny material-icons" style="vertical-align: middle; margin-right: 15px;">launch</i> Launch Prototype</a>
+
       <br />
       <div class="row pad">
         <div class="col s12 m4 l3">
@@ -200,7 +209,7 @@
         <div class="col s12 m4 l3 offset-l1">
           <img src="../assets/social-app/img-social-final-2-01-new-york-michael-walker-design.png" alt="img-social-final-3-01-new-york-michael-walker-design" class="responsive-img" />
         </div>
-        <p class="center-align col s12 m10 offset-m1 l8 offset-l2">I worked with our platform manager to critique and refine the design. We tracked comments and exchanged ideas in an online tool called InVision.</p>
+        <p class="center-align col s12 m10 offset-m1 l8 offset-l2 grey-text"><i>I worked with our platform manager to critique and refine the design. We tracked comments and exchanged ideas in an online tool called InVision.</i></p>
       </div>
       <div class="row pad">
         <div class="col s12 m4 l3">
@@ -212,7 +221,7 @@
         <div class="col s12 m4 l3 offset-l1">
           <img src="../assets/social-app/img-social-final-6-01-new-york-michael-walker-design.png" alt="img-social-final-3-01-new-york-michael-walker-design" class="responsive-img" />
         </div>
-        <p class="center-align col s12 m10 offset-m1 l8 offset-l2">I worked with our platform manager to critique and refine the design. We tracked comments and exchanged ideas in an online tool called InVision.</p>
+        <p class="center-align col s12 m10 offset-m1 l8 offset-l2 grey-text"><i>I worked with our platform manager to critique and refine the design. We tracked comments and exchanged ideas in an online tool called InVision.</i></p>
       </div>
       <div class="row pad">
         <div class="col s12 m4 l3">
@@ -224,7 +233,7 @@
         <div class="col s12 m4 l3 offset-l1">
           <img src="../assets/social-app/img-social-final-9-01-new-york-michael-walker-design.png" alt="img-social-final-3-01-new-york-michael-walker-design" class="responsive-img" />
         </div>
-        <p class="center-align col s12 m10 offset-m1 l8 offset-l2">I worked with our platform manager to critique and refine the design. We tracked comments and exchanged ideas in an online tool called InVision.</p>
+        <p class="center-align col s12 m10 offset-m1 l8 offset-l2 grey-text"><i>I worked with our platform manager to critique and refine the design. We tracked comments and exchanged ideas in an online tool called InVision.</i></p>
       </div>
     </div>
   </div>
@@ -238,7 +247,7 @@
     <div class="cta-footer">
       <div class="container">
         <div class="row">
-          <div class="col s12 m7 offset-m1 l6">
+          <div class="col s12 m8 offset-m1 l6">
             <h2>Let's Get to Work</h2>
             <p>I’d love to hear from you. Click below to start a project or get a quote. Or, if you want to talk about the latest in design, reach out on LinkedIn.</p>
             <a href="../contact.html" class="btn-large waves-effect waves-dark blue-text white hoverable">Contact</a>
@@ -249,10 +258,10 @@
     <div class="footer-copyright white-text black">
       <div class="container">
         <div class="row">
-          <div class="col s12 m6 offset-m3 m4 l4">
+          <div class="col s12 m6 m4 l4">
             <p><i class="tiny material-icons">copyright</i> Copyright Michael Walker 2018</p>
           </div>
-          <div class="col s8 m6 l6">
+          <div class="col s8 m4 l6">
             <p>UI Design by Michael Walker, Site built by John Maitland</p>
           </div>
           <div class="col s4 m2 l2 right-align">
