@@ -9,7 +9,7 @@
 #logo{
   height: 66px;
   content: url('../assets/MDW_Main-logo.png');
-  margin-right: 18px;
+  margin-right: 6px;
 }
 @media only screen and (min-width: 601px) {
   #logo{
