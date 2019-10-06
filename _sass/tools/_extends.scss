@@ -17,7 +17,7 @@
 /**
  * Card Shadow
  */
-%card-shadow {
+%card-shadow {  
   position: relative;
 
   border: 1px solid transparent;
@@ -42,9 +42,9 @@
 
   &:hover {
     border: 1px solid rgba($color-black, 0.1);
-    box-shadow: 0px 0px 50px rgba($color-black, 0.1);
+    box-shadow: 0px 0px 47px rgba($color-black, 0.1);
     transform: translate3d(0, -0.5em, 0);
-    transition: all .4s ease;
+    transition: all 1s ease;
 
     &:after {
       opacity: 1;

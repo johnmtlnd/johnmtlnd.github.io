@@ -1,0 +1,30 @@
+<header class="header black-bg" style="color: white;">
+
+  <a href="/">
+    <figure class="header__img">
+      <img src="/assets/images/logo.svg" alt="J Logo"/>
+    </figure>
+  </a>
+  <nav>
+    <ul class="header__list" style="color: white;">
+      <li><a href="/info" style="color: white;">Info</a></li>
+      <li><a href="/projects" style="color: white;">Projects</a></li>
+    </ul>
+  </nav>
+  <ul class="header__list social">
+    {% if site.email or site.social %}
+      <ul class="footer__social">
+        {% if site.email %}
+          <li><a class="fa fa-lg fa-envelope-o" href="mailto:{{ site.email }}"></a></li>
+        {% endif %}
+        {% for social in site.social %}
+          <li>
+            <a href="{{ social[1] }}" target="_blank" style="color: white;">
+              <i class="fa fa-lg fa-{{ social[0] }}"></i>
+            </a>
+        </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </ul>
+</header>

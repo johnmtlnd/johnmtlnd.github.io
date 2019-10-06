@@ -2,39 +2,37 @@
  * Header
  */
 .header {
-  @extend %box-shadow;
-
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 99;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 4em;
+  height: 6em;
   width: 100%;
-  padding-right: 2em;
-  padding-left: 2em;
+  padding-right: 5%;
+  padding-left: 5%;
+  font-family: $font-meta;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: .8em;
 
-  background-color: $color-grey;
 
   @media (min-width: $mq-md) {
-    padding-right: 2em;
-    padding-left: 2em;
-  }
-
-  a{
-    border-bottom: none;
+    padding-right: 4em;
+    padding-left: 4em;
   }
 
   &__img {
-
+    display: none;
     img {
       height: 3em;
       width: 3em;
     }
-
+    @media(min-width: $mq-md){
+      display: block;
+    }
   }
 
   &__list {
@@ -49,35 +47,36 @@
       }
 
       a {
-        font-family: $font-header;
-        font-weight: 500;
-        text-transform: none;
-        letter-spacing: .01em;
-        color: $color-blue;
-        font-size: .9em;
+        @include link-underline();
 
+        font-family: $font-meta;
+        font-weight: 500;
       }
     }
   }
-  .social{
-    z-index: 999;
-  }
-  .footer__social li{
-    margin: 0px 10px;
+  span{
+    text-transform: uppercase;
+    letter-spacing: .1em;
   }
 }
-.header {
+
+#home .header {
   position: absolute;
+  width: 100%;
   background-color: transparent;
   box-shadow: none;
+
+  @media (min-width: $mq-md) {
+    padding-right: 4em;
+    padding-left: 4em;
+    width: 60%;
+  }
 
   &.scrollingHeader {
     @extend .animated;
     @extend .fadeInDown;
-    width: 100%;
+
     position: fixed;
-
-    background-color: $color-grey;
-
+    width: 100%;
   }
 }

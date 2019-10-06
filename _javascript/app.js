@@ -36,7 +36,7 @@ $(document).ready(function() {
   $('.portfolio-carousel').owlCarousel({
     items: 1,
     loop: true,
-    mouseDrag: true,
+    mouseDrag: false,
     touchDrag: false,
     pullDrag: false,
     nav: true,

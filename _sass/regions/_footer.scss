@@ -2,11 +2,34 @@
  * Footer
  */
 .footer {
-  font-family: $font-header;
-  color: $color-beta;
-  font-size: .8em;
+  min-height: 25vh;
+  color: $color-white;
 
+  dl{
+    a{
+      @include link-posts();
+      color: $color-white;
+    }
+    dd{
+      line-height: 2em;
+      font-size: .8em;
+      font-family: $font-meta;
+      margin-inline-start: 0px;
+    }
+  }
 
+  dd{
+    margin-left: 0;
+  }
+  dt{
+    margin-bottom:5%;
+    font-family: $font-header;
+  }
+  p{
+    font-size: .8em;
+    color: $color-white;
+    font-family: $font-meta;
+  }
 
   &__container {
     display: flex;
@@ -28,9 +51,7 @@
       }
 
       a {
-        transition: color 0.3s ease-in;
-
-        color: $color-beta;
+        transition: color 0.3s ease-in-out;
 
         &:hover,
         &:active,

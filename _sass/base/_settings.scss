@@ -6,20 +6,23 @@
 }
 
 @font-face {
-  font-family: "Space Mono", sans-serif;
-  src: url("./assets/css/fonts/space-mono/SpaceMono-Regular.ttf");
+  font-family: "Styrene A", sans-serif;
+  src: url("css/fonts/styrene a/StyreneAWeb-Bold.otf");
 }
 
 @font-face {
-  font-family: "TT Norms", sans-serif;
-  src: url("./assets/css/fonts/tt-nro/TTNorms-Regular.otf");
+  font-family: "Copernicus Book", sans-serif;
+  src: url("css/fonts/copernicus/GalaxieCopernicus-Book.otf");
+}
+
+@font-face {
+  font-family: "Martha Light", monospace;
+  src: url("css/fonts/martha/Martha-Regular.otf");
 }
 
 body {
   font-family: $font-body;
-  font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  font-variant-ligatures: none;
   font-size: 100%;
   line-height: 1.4;
 
@@ -44,17 +47,25 @@ body {
   }
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 
   font-family: $font-header;
-  font-weight: 600;
+  font-weight: 300;
   line-height: 1.1;
-
 }
 
 h1 {
   font-size: 2.75em;
+
+  @media (min-width: $mq-md) {
+    font-size: 4em;
+  }
 }
 
 h2 {
@@ -90,16 +101,9 @@ h4 {
 p {
   margin-top: 0;
   margin-bottom: 1em;
-  line-height: 1.35em;
-    letter-spacing: -.023em;
-}
 
-a {
-  @include link-underline();
-  color: $color-blue;
-  text-decoration: none;
+  font-size: 1.1em;
 }
-
 
 figure {
   margin: 0;
@@ -122,7 +126,7 @@ cite {
   display: block;
   margin-top: 0.125em;
 
-  font-family: $font-header;
+  font-family: $font-meta;
   font-weight: 400;
   font-style: normal;
 
@@ -136,12 +140,11 @@ ol, ul {
   padding: 0;
 }
 
-
 /**
  * Text Selection
  */
 ::selection {
-  color: $color-grey;
+  color: $color-white;
   background-color: $color-beta;
   text-shadow: none;
 }

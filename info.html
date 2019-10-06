@@ -1,47 +1,61 @@
 ---
 layout: default
-title: About Me
-description:
+description: This page is about John Maitland, he is a designer that lives in Richmond, VA. You can see his work on this website.
 permalink: /info
 ---
-<section >
-    <div class="grid">
-      <div class="about">
-        <img src="{{ site.default_img }}" width="300" alt="" style="margin: 5%; margin-left: 0;">
-        <h1 class="section-header">Hello.</h1>
-        <p class="about__text wow fadeInUp" data-wow-delay="300ms">
-          I wear plain black t-shirts, have fashionable glasses, and wear sandals out of season. I juxtapose my hyper-modern career choice by maintaining an innate interest in the outdoors, living in a studio apartment with no furniture, and spending very little of my free time actually on the computer.</p>
-          <p class="wow fadeInUp" data-wow-delay="500ms">
-            Are you <i>really</i> interested in working together? Then reach out and let's talk about it over a beer or <i>slide</i> into my <a href="instagram.com/johnmtlnd">Instagram</a> DM's because apparently that's professional enough these days.
-          </p>
-          <div class="container-btn">
-            <a class="btn" href="mailto:hello@johnmtlnd.com">
-              <div>
-                <span>Add me on MySpace</span>
-                <span>Add me on MySpace</span>
+<section class="mast about">
+  <header class="mast__header">
+    <span class="about__meta">
+      John Maitland <br />
+      Design, Illustration, & Development<br />
+      &mdash;&mdash; <br>
+      <a href="mailto:hello@johnmtlnd.com">hello@johnmtlnd.com</a><br />
+      Richmond_VA
+    </span>
+
+    <h4 class="about__text wow fadeInUp" data-wow-delay="100ms">
+      I wear plain black t-shirts, have fashionable glasses, and wear sandals out of season. I appose my hyper-modern career choice by maintaining an interest in the outdoors, picking up litter, and spending very little of my free time actually on the computer.
+    </h4>
+
+    <h2 class="about__hero wow fadeInUp" data-wow-delay="300ms">
+      You can see of my work <a href="/projects">here</a>, <a href="https://dribbble.com/johnmtlnd">here</a>, and sometimes <a href="https://instagram.com/johnmtlnd">here</a>.
+    </h2>
+
+    <p class="about__text">Currently I work for <a href="https://campfireandco.com">Campfire & Co.</a>, creating brands for clients in the across Virgina, often juggling web-design and illustration work as well. </p>
+
+    <p class="about__contact wow fadeInUp" data-wow-delay="300ms"> You can find me on <a href="https://twitter.com/johnmtlnd">the Twitter</a> and <a href="https://instagram.com/johnmtlnd">the Instagram</a> sharing scribbles and goings-on. If you’d like to share a deep loving email about business-y things you can do that <a href="mailto:hello@johnmtlnd.com">here</a>. Are you <i>really</i> interested in working together? Then reach out and let's talk about it over a beer or slide into my Instagram DM's because apparently that's professional enough these days.</p>
+  </header>
+
+  <div class="mast__img bg-alpha">
+    <div class="absolute-bg" style="background-image: url('/assets/images/mast-left.jpg');">
+    </div>
+  </div>
+</section>
+<section id="work" class="section-padding--half">
+    <ul class="container-triple" itemscope itemtype="http://schema.org/Blog">
+      {% for post in site.posts limit:3 %}
+        <li class="preview" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+          <a class="preview__link" href="{{ post.url | prepend: site.baseurl }}" itemprop="url">
+
+              <div class="wow container">
+                <div class="preview__container">
+                  <h2 class="wow fadeInUp" data-wow-delay="150ms" itemprop="name">{{ post.title }}</h2>
+                  <time class="preview__date wow fadeInUp" data-wow-delay="450ms" itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y" }}</time>
+
+                </div>
+
               </div>
-            </a>
-      </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <div class="container-btn">
+      <a class="btn" href="/projects">
+        <div>
+          <span>See All the Projects</span>
+          <span>See All the Projects</span>
+        </div>
+      </a>
     </div>
 </section>
-
-<section class=" about section-padding bg-grey">
-  <div class="grid">
-        <div class="container-double">
-          <h4>Currently</h4>
-          <span>Designer &mdash; <a href="https://www.campfireandco.com">Campfire & Co.</a></span>
-          <h4>Previously</h4>
-          <ul style="list-style:none;">
-            <li>Free Floating Human &mdash; Summer 2017 &mdash; ask me about it!</li>
-            <li>Junior Designer &mdash; Riggs Ward Design</li>
-            <li>Design Intern &mdash; BCWH Architects</li>
-            <li>Shop Assistant &mdash; Bowe Haus Press</li>
-            <li>Student &mdash; VCUarts &mdash; BFA in Design</li>
-          </ul>
-        </div>
-        <div class="grid">
-          <div id="instafetch" class="container-triple"></div>
-        </div>
-      </div>
-    </div>
-  </section>

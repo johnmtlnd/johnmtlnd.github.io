@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body id="{% if page.title %}{{ page.title | downcase }}{% else %}home{% endif %}" class="🍕 animated fadeIn">
+  <body id="{% if page.title %}{{ page.title | downcase }}{% else %}home{% endif %}" class="🍕 animated fadeIn" style="background-color: #{{ page.color }};">
 
     {% include header.html %}
 

@@ -1,25 +1,53 @@
-<footer class="footer section-padding--half">
+<footer class="footer section-padding--half bg-black ">
+  <div class="grid">
+    <div class="container-triple" style="margin-top: 0; padding-top: 0;">
+      <dl>
+        <dt>Reach Out</dt>
+        <dd><a href="mailto:hello@johnmtlnd.com">hello@johnmtlnd.com</a></dd>
+        <dd>-</dd>
+        <dd><a href="https://instagram.com/johnmtlnd">Insta</a></dd>
+        <dd><a href="https://twitter.com/user/johnmtlnd">Twitter</a></dd>
+        <dd><a href="https://dribbble.com/johnmtlnd">Dribbble</a></dd>
+      </dl>
+
+      <dl>
+        <dt>Day to Day</dt>
+        <dd><a href="/projects/brands">Branding</a></dd>
+        <dd><a href="/projects/illustrations">Illustraion</a></dd>
+        <dd>Front-end Development</dd>
+        <dd>Print & Packaging</dd>
+      </dl>
+
+      <dl>
+        <dt>What I Like</dt>
+        <dd>Mtn Biking</dd>
+        <dd>Cookery</dd>
+        <dd>Drinking Alcohol</dd>
+        <dd>Corn Tortillas</dd>
+      </dl>
+    </div>
+  </div>
   <div class="footer__container grid">
-    <p>&copy;{{ site.time | date: "%Y" }} {{ site.title }}. Made with Jekyll. Hosted by Github Pages. Code is published under GPL.</p>
+
+    <p>&copy;{{ site.time | date: "%Y" }} {{ site.title }}. Coded With code using Jekyll published through Github Pages.</p>
     {% if site.email or site.social %}
       <ul class="footer__social">
         {% if site.email %}
-          <li><a class="fa fa-lg fa-envelope-o" href="mailto:{{ site.email }}">&nbsp;</a></li>
+          <li><a class="fa fa-lg fa-envelope-o" href="mailto:{{ site.email }}"></a></li>
         {% endif %}
         {% for social in site.social %}
-          <li><a class="fa fa-lg fa-{{ social[0] }}" href="{{ social[1] }}" target="_blank">
-            &nbsp;
-          </a></li>
+          <li><a class="fa fa-lg fa-{{ social[0] }}" href="{{ social[1] }}" target="_blank"></a></li>
         {% endfor %}
       </ul>
     {% endif %}
   </div>
 </footer>
+
 <script type="text/javascript" src="{{ '/assets/js/jquery.min.js' | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ '/assets/js/app.min.js' | prepend: site.baseurl }}"></script>
 {% if site.instagram_key %}
   <script type="text/javascript">
-    if ($('body').attr('id') ) {
+    if ($('body').attr('id') === 'home') {
       instafetch.init({
         accessToken: '{{ site.instagram_key }}',
         numOfPics: 6,
