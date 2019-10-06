@@ -7,17 +7,17 @@
 
 @font-face {
   font-family: "Styrene A", sans-serif;
-  src: url("css/fonts/styrene a/StyreneAWeb-Bold.otf");
+  src: url("css/fonts/styrene a/StyreneAWeb-Bold.otf") format('opentype');
 }
 
 @font-face {
-  font-family: "Copernicus Book", sans-serif;
-  src: url("css/fonts/copernicus/GalaxieCopernicus-Book.otf");
+  font-family: "Copernicus Book", serif;
+  src: url("css/fonts/copernicus/GalaxieCopernicus-Book.otf") format('opentype');
 }
 
 @font-face {
   font-family: "Martha Light", monospace;
-  src: url("css/fonts/martha/Martha-Regular.otf");
+  src: url("css/fonts/martha/Martha-Regular.otf") format('opentype');
 }
 
 body {
