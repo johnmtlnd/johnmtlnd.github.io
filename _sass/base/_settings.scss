@@ -6,18 +6,24 @@
 }
 
 @font-face {
-  font-family: "Styrene A", sans-serif;
-  src: url("/css/fonts/styrene a/StyreneAWeb-Bold.otf") format('opentype');
+  font-family: 'Styrene A', sans-serif;
+  src: url('/css/fonts/styrene a/StyreneAWeb-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Copernicus Book", serif;
-  src: url("/css/fonts/copernicus/GalaxieCopernicus-Book.otf") format('opentype');
+  font-family: 'Copernicus Book', serif;
+  src: url('/css/fonts/copernicus/GalaxieCopernicus-Book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Martha Light", monospace;
-  src: url("/css/fonts/martha/Martha-Regular.otf") format('opentype');
+  font-family: 'Martha Light', monospace;
+  src: url('/css/fonts/martha/Martha-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
@@ -131,7 +137,7 @@ cite {
   font-style: normal;
 
   &:before {
-    content: "\2014 \0020";
+    content: '\2014 \0020';
   }
 }
 
