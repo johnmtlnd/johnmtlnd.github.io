@@ -36,6 +36,7 @@ job:
   title: Designer
 
 # Build settings
+include: ["assets"]
 exclude: ["node_modules", "gulpfile.js", "assets/js/app.js", "README.md", "Gemfile", "Gemfile.lock"]
 markdown: kramdown
 permalink: /projects/:title/
