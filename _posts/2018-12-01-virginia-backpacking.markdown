@@ -4,7 +4,7 @@ title: "Virginia Backpacking"
 date: 2018-12-01
 tags: illustration
 color:
-description: A series of patches for Virginia Backpacking for Virginia's 100 tallest peaks and 5 peaks over 5 thousand feet challenges.
+description: A series of patches for Virginia Backpacking for Virginia's One Hundred tallest peaks and 5 peaks over 5 thousand feet challenges. Check out Virginia Backpacking on Facebook and get outside to explore all that the beautiful Blue Ridge Mountains have to offer. 
 image: /assets/images/placeholders/VA_BP_placeholder.png
 ---
 

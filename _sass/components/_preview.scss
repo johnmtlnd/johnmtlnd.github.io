@@ -18,17 +18,11 @@
 
   &__link {
     /*@extend %card-shadow;*/
-    display: block;
+    display: inline-block;
     padding: .5em;
     @media(min-width: $mq-md){
       padding: 3.5em;
     }
-  }
-
-  &__img {
-    position: relative;
-    padding:2em;
-    max-width: 250px;
   }
 
   figure{
@@ -36,9 +30,11 @@
     flex-direction: row;
     justify-content: center;
     flex-grow: 1;
-    background-size: cover;
-    min-height: 250px;
-    max-width: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px;
+    max-width: 400px;
     display: none;
 
     @media(min-width: $mq-md){
@@ -53,7 +49,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-grow: 1;
+    flex-grow: 2;
     /*padding: 1em;
     @media (min-width: $mq-sm) {
       padding: 3em 2em;

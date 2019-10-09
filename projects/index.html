@@ -7,6 +7,28 @@ permalink: /projects/
 <section id="blog" class="section-padding--half">
     <h1 class="section-header">Work n Stuff</h1>
     <ul itemscope itemtype="http://schema.org/Blog">
+      <li class="preview" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="container-double preview__link">
+          <a href="/projects/brands.html" itemprop="url">
+            <div class="container-double">
+              <figure class="preview__img wow fadeIn" data-wow-delay="200ms" style="background-image: url('/assets/images/placeholders/branding.png');"></figure>
+              <div class="preview__container">
+                <p class="preview__excerpt wow fadeInUp" data-wow-delay="300ms" itemprop="description">A selection of recent marks and brands I've collaborated on.</p>
+              </div>
+            </div>
+
+          </a>
+          <a href="/projects/illustrations.html" itemprop="url">
+            <div class="container-double">
+              <div class="preview__container">
+                <p class="preview__excerpt wow fadeInUp" data-wow-delay="300ms" itemprop="description">Scribbles, vectors, drawings, ideas and every manner of thing you might imagine!</p>
+              </div>
+              <figure class="preview__img wow fadeIn" data-wow-delay="200ms" style="background-image: url('/assets/images/placeholders/illustrations.png');"></figure>
+            </div>
+          </a>
+        </div>
+      </li>
+
       {% for post in site.posts %}
         <li class="preview" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
           <a class="preview__link" href="{{ post.url | prepend: site.baseurl }}" itemprop="url">
@@ -32,5 +54,6 @@ permalink: /projects/
           </a>
         </li>
       {% endfor %}
+
     </ul>
 </section>
