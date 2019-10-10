@@ -9,7 +9,7 @@ image: /assets/images/placeholders/jasper.jpg
 ---
 <div class="container">
 <figure>
-  <img src="/assets/images/jasper/jasper-brand-suite.png" alt="Placeholder"/>
+  <img src="/assets/images/jasper/Jasper-brand-suite.png" alt="Placeholder"/>
 </figure>
 </div>
 
