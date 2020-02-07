@@ -1,16 +1,26 @@
 ---
 layout: post
-title: "The Jasper"
-date: 2018-01-31
-tags: branding
-color: eee6d4
-description: The Jasper is a one of a kind bar experience offering craft cocktails in a polished but relaxed atmosphere. Every detail in the space is designed to tell part of the brand story. An antique mirror, live edge walnut, vintage and brass accents as well as Persian rugs compliment the saturated color palette.
-image: /assets/images/placeholders/jasper.jpg
+title: "Cirrus Vodka"
+date: 2019-11-21
+tags: branding packaging
+color: FEE4CD
+description: The new graphic identity for Cirrus Vodka introduces a fun loving brand personality and premium focus into the logo and packaging through a new modern icon, bold typography, and a refined color palette.
+
+image: /assets/images/placeholders/cirrus-vodka.jpg
 ---
 <div class="container">
 <figure>
   <img src="/assets/images/jasper/Jasper-brand-suite.png" alt="Placeholder"/>
 </figure>
+</div>
+
+<div class="container-btn section-padding">
+  <a class="btn" href="https://cirrusvodka.com">
+    <div>
+      <span>You know you wanna</span>
+      <span>Peep the site ⟶</span>
+    </div>
+  </a>
 </div>
 
 <div class="container-double">
