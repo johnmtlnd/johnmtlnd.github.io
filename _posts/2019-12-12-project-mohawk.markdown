@@ -3,9 +3,8 @@ layout: post
 title: "Project Mohawk"
 date: 2019-12-12
 tags: branding collateral
-color: FBD1C7
-description: Breathe Life into Your Brand is a creative card deck that helps develop a cohesive personality and tone of voice for brands.It includes a 54 card deck, a poster to display your chosen cards, and tips for using this card deck to explore and define your brand’s personality. 
-
+description: Breathe Life into Your Brand is a creative card deck that helps develop a cohesive personality and tone of voice for brands. It includes a 54 card deck, a poster to display your chosen cards, and tips for using this card deck to explore and define your brand’s personality.
+color: f2ecdf
 image: /assets/images/placeholders/mohawk.png
 ---
 <div class="container">
