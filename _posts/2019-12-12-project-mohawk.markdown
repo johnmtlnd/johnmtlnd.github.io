@@ -7,6 +7,7 @@ description: Breathe Life into Your Brand is a creative card deck that helps dev
 color: f2ecdf
 image: /assets/images/placeholders/mohawk.png
 ---
+
 <div class="container">
 <figure class="large-img">
   <img src="/assets/images/mohawk/1-overall.jpg" alt="Placeholder"/>
@@ -19,6 +20,9 @@ image: /assets/images/placeholders/mohawk.png
 </figure>
 <figure >
   <img src="/assets/images/mohawk/3-arranged.jpg" alt="Placeholder"/>
+</figure>
+<figure>
+  <img src="/assets/images/mohawk/0-card-scatter.png" alt="Placeholder"/>
 </figure>
 </div>
 
