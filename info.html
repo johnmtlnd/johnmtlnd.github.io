@@ -31,31 +31,3 @@ permalink: /info
     </div>
   </div>
 </section>
-<section id="work" class="section-padding--half">
-    <ul class="container-triple" itemscope itemtype="http://schema.org/Blog">
-      {% for post in site.posts limit:3 %}
-        <li class="preview" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-          <a class="preview__link" href="{{ post.url | prepend: site.baseurl }}" itemprop="url">
-
-              <div class="wow container">
-                <div class="preview__container">
-                  <h2 class="wow fadeInUp" data-wow-delay="150ms" itemprop="name">{{ post.title }}</h2>
-                  <time class="preview__date wow fadeInUp" data-wow-delay="450ms" itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y" }}</time>
-
-                </div>
-
-              </div>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-
-    <div class="container-btn">
-      <a class="btn" href="/projects">
-        <div>
-          <span>See All the Projects</span>
-          <span>See All the Projects</span>
-        </div>
-      </a>
-    </div>
-</section>
