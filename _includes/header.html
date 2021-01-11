@@ -1,29 +1,16 @@
-<header class="header">
-
-  <a href="/">
-    <figure class="header__img">
-      <img src="/assets/images/logo.svg" alt="J Logo"/>
-    </figure>
-  </a>
-  <nav>
-    <ul class="header__list">
-      <li><a href="/info">Info</a></li>
-    </ul>
-  </nav>
-  <ul class="header__list social">
-    {% if site.email or site.social %}
-      <ul class="footer__social">
-        {% if site.email %}
-          <li><a class="fa fa-lg fa-envelope-o" href="mailto:{{ site.email }}"></a></li>
-        {% endif %}
-        {% for social in site.social %}
-          <li>
-            <a href="{{ social[1] }}" target="_blank">
-              <i class="fa fa-2x fa-{{ social[0] }}"></i>
-            </a>
-        </li>
-        {% endfor %}
-      </ul>
-    {% endif %}
-  </ul>
-</header>
+<div class="bio">
+  <div class="bio__header">
+    <a class="bio-title" data-aos="fade-up" data-aos-duration="600" href="{{ site.url }}{{ "/" | relative_url }}">
+      <h1>{{ site.header }}</h1>
+    </a>
+    <div class="site-nav" data-aos="fade-up" data-aos-duration="600">
+      {% if site.data.navigation %}
+        <ul class="bio__nav">
+          {% for item in site.data.navigation %}
+            <li class="nav-item"><a href="{{ item.url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </div>
+</div>

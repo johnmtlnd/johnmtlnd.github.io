@@ -1,33 +1,29 @@
 ---
-layout: default
-description: This page is about John Maitland, he is a designer that lives in Richmond, VA. You can see his work on this website.
-permalink: /info
+layout: page
 ---
-<section class="mast about">
-  <header class="mast__header">
-    <span class="about__meta">
-      John Maitland <br />
-      Design, Illustration, & Development<br />
-      &mdash;&mdash; <br>
-      <a href="mailto:hello@johnmtlnd.com">hello@johnmtlnd.com</a><br />
-      Richmond_VA
-    </span>
 
-    <h4 class="about__text wow fadeInUp" data-wow-delay="100ms">
-      I wear plain black t-shirts, have fashionable glasses, and wear sandals out of season. I appose my hyper-modern career choice by maintaining an interest in the outdoors, picking up litter, and spending very little of my free time actually on the computer.
-    </h4>
+<div class="info">
+  <h2 data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
+    I wear plain black t-shirts, have fashionable glasses, and wear sandals out of season. I work across disciplines and mediums to create meaningful and well-crafted design systems, brands, typography and drawings. If I am not running, hiking, or mountain biking I am probably engaging in my own personal creative work down by the River.
+  </h2>
 
-    <h2 class="about__hero wow fadeInUp" data-wow-delay="300ms">
-      You can see of my work <a href="https://www.campfireandco.com">here</a>, <a href="https://dribbble.com/johnmtlnd">here</a>, and sometimes <a href="https://instagram.com/johnmtlnd">here</a>.
-    </h2>
+  <h1 data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
+    You can see of my work <a href="https://dribbble.com/johnmtlnd">here</a> and sometimes <a href="https://instagram.com/johnmtlnd">here</a>.
+  </h1>
 
-    <p class="about__text">Currently I work for <a href="https://campfireandco.com">Campfire & Co.</a>, creating brands for clients in the across Virgina, often juggling web-design and illustration work as well. </p>
+  <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">Currently I work for <a href="https://campfireandco.com/work">Campfire & Co.</a>, creating brands for clients across Virgina, often juggling web-design and illustration work as well.</p>
 
-    <p class="about__contact wow fadeInUp" data-wow-delay="300ms"> You can find me on <a href="https://twitter.com/johnmtlnd">the Twitter</a> and <a href="https://instagram.com/johnmtlnd">the Instagram</a> sharing scribbles and goings-on. If you’d like to share a deep loving email about business-y things you can do that <a href="mailto:hello@johnmtlnd.com">here</a>. Are you <i>really</i> interested in working together? Then reach out and let's talk about it over a beer or slide into my Instagram DM's because apparently that's professional enough these days.</p>
-  </header>
+  <p data-aos="fade-up" data-aos-delay="700" data-aos-duration="600"> You can find me on <a href="https://twitter.com/johnmtlnd">Twitter</a> and <a href="https://instagram.com/johnmtlnd">Instagram</a> sharing scribbles and goings-on. If you’d like to share a deep loving email about what you are watching on Hulu, you can do that <a href="mailto:hello@johnmtlnd.com">here</a>.</p>
+<hr />
+  <h2>Past Clients & Projects</h2>
+  {% if site.data.past-clients %}
+    <ul class="past__client">
+      {% for item in site.data.past-clients %}
+        <li class="item"><a href="{{ item.url }}">{{ item.title }}</a> - {{ item.service }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>
 
-  <div class="mast__img bg-alpha">
-    <div class="absolute-bg" style="background-image: url('/assets/images/mast-left.jpg');">
-    </div>
-  </div>
-</section>
+
+<img class="mast-right" data-aos="fade-down" data-aos-duration="1000" src="assets/mast-right.png" alt="" style="opacity:.6;" />

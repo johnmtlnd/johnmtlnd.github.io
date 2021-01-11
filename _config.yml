@@ -1,49 +1,33 @@
-# Site settings
-baseurl: ""
-
-# Color settings (Hex value without #)
-color_alpha: FFFAF6
-color_beta: 0051FF
-
-# Google Analytics
-google_analytics: UA—XXXXXXXX-X
-
-# Instagram API
-instagram_key: 1988967361.1677ed0.f28e3db2bc374dffa10b9dc3173c1895
-instagram_caption: false
-
-# SEO settings
+# site
 title: John Maitland
-description: designer
-url: ""
-email: hello@johnmtlnd.com
-twitter_username: johnmtlnd
-default_img: ../assets/images/headshot.png
+baseurl: ""
+url: "http://johnmtlnd.com"
+favicon: "/assets/sample/favicon.ico"
+g_analytics: UA-12345678-1
 
-# Profile settings
-social:
-  twitter: http://twitter.com/johnmtlnd
-  dribbble: http://dribbble.com/johnmtlnd
-  instagram: http://instagram.com/johnmtlnd
+# bio
+header: John Maitland
+desc: >
+  Hello. I am a multi-hyphenated designer & front-end developer working for Campfire & Co. in Richmond, VA. > I work across disciplines and mediums to create meaningful and well-crafted design systems, brands, typography and drawings. If I am not running, hiking, or biking I am probably engaging in my own personal creative work.
 
-location:
-  neighborhood: Forest View
-  city: RVA
-  state: Virginia
+# posts
+date_format: "%Y"
+post_title: Project
+post_date: Year
+post_cat: Category
 
-job:
-  place: Campfire & Co.
-  title: Designer
+# post detail
+prev-next: true
 
-# Build settings
-include: ["assets"]
-exclude: ["node_modules", "gulpfile.js", "assets/js/app.js", "README.md", "Gemfile", "Gemfile.lock"]
+# build settings
 markdown: kramdown
-permalink: /projects/:title/
-
-# Sass
-sass:
-  style: compressed
-
-# Gems
-gems: [jekyll-sitemap, octopress-autoprefixer]
+# theme: louie
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - any_additional_item

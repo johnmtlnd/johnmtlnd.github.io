@@ -1,0 +1,134 @@
+$on-palm:           800px !default;
+$on-laptop:         1200px !default;
+
+// typography
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+$display:             'Space Grotesk', serif;
+$sans:                'Space Mono', sans-serif;
+$mono:                'Space Mono', monospace;
+$font__size:        16px;
+$font__weight:      400;
+$font__line-height: 2;
+
+// colors
+$color__black:      #202020;
+$color__gray:       #fafafa;
+$color__beige:      #DCDCDC;
+$color__blue:     #0051FF;
+
+@mixin media-query($device) {
+  @media screen and (min-width: $device) {
+    @content;
+  }
+}
+
+// elements
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: $color__beige;
+}
+
+::-moz-selection {
+  background: $color__blue;
+}
+
+h1, h2, h3, h4, h5, h6, span{
+  font-family: $display;
+  font-weight: 400;
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+hr {
+  color: $color__black;
+  background-color: $color__black;
+}
+
+a {
+  // display: block;
+  // width: 100%;
+  // height: 100%;
+  font-family: $mono;
+  color: $color__blue;
+  text-decoration: underline;
+
+  &:hover {
+    color: $color__blue;
+    text-decoration: underline;
+  }
+}
+
+// layout
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body {
+  width: 100%;
+  margin: 25px 0;
+  padding: 0;
+  background: $color__beige;
+  font-family: $sans;
+  font-size: $font__size;
+  font-weight: $font__weight;
+  line-height: $font__line-height;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 25px;
+}
+
+.container-big {
+  max-width: 1500px;
+  margin: 0 25px;
+}
+
+button{
+  font-family: $mono;
+  background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+button:hover{
+  text-decoration: underline;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(300px, auto);
+}
+
+// media queries
+@include media-query($on-palm) {
+  body {
+    margin: 50px 0 25px;
+  }
+
+  .container {
+    margin: 0 50px;
+  }
+  .grid{
+    display: block !important;
+  }
+}
+
+@include media-query($on-laptop) {
+  body {
+    margin: 80px 0 50px;
+  }
+
+  .container {
+    margin: 0 120px;
+  }
+}
