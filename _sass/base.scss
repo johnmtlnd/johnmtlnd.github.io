@@ -109,6 +109,10 @@ button:hover{
   grid-auto-rows: minmax(300px, auto);
 }
 
+.mast-right{
+    display: none !important;
+  }
+
 // media queries
 @include media-query($on-palm) {
   body {
@@ -121,14 +125,42 @@ button:hover{
   .grid{
     display: block !important;
   }
+  .mast-right{
+    display: block !important;
+  }
+
 }
 
 @include media-query($on-laptop) {
   body {
     margin: 80px 0 50px;
   }
-
   .container {
     margin: 0 120px;
+  }
+
+  .mast-right{
+    display: block !important;
+  }
+}
+
+.grid {
+  display: grid !important;
+  overflow: hidden;
+  /*grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  /* This is better for small screens, once min() is better supported */
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 500px), 1fr));
+  grid-gap: 2.5rem;
+  align-items: center;
+  /* This is the standardized property now, but has slightly less support */
+  /* gap: 1rem */
+  img{
+    max-width: 100% !important;
+  }
+}
+
+.post__body{
+  img{
+    padding: 10px !important;
   }
 }
